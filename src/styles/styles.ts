@@ -5,11 +5,11 @@ import { Colors, Fonts } from "./variables"; // Importando as variáveis
 export const GlobalStyle = createGlobalStyle`
   /* Carregar a fonte personalizada */
   @font-face {
-    font-family: 'SaiyanSans';
-    src: url('/assets/fonts/SaiyanSans.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'SaiyanSans';
+  src: url('./assets/fonts/Saiyan-Sans.ttf') format('truetype'); /* Caminho relativo correto */
+  font-weight: normal;
+  font-style: normal;
+}
 
   /* Reset de margens e paddings */
   * {

@@ -24,6 +24,7 @@ export const Title = styled.h1`
   color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: ${Spacing.large};
   text-align: center;
+  -webkit-text-stroke: 0.8px #000;
 
   /* Responsividade */
   @media (max-width: ${Breakpoints.tablet}) {
@@ -36,6 +37,7 @@ export const Title = styled.h1`
 `;
 
 export const SubTitle = styled.h2`
+  -webkit-text-stroke: 0.3px #000;
   font-size: 2rem;
   color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: ${Spacing.medium};

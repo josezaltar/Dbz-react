@@ -22,6 +22,7 @@ export const Title = styled.h1`
   font-size: 3rem;
   color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: ${Spacing.large};
+  -webkit-text-stroke: 0.8px #000;
 
   @media (max-width: ${Breakpoints.tablet}) {
     font-size: 2.5rem;
@@ -29,6 +30,7 @@ export const Title = styled.h1`
 `;
 
 export const DownloadItem = styled.div`
+  -webkit-text-stroke: 0.2px #000;
   padding: ${Spacing.medium};
   margin: ${Spacing.medium} 0;
   border-radius: 10px;
@@ -38,6 +40,7 @@ export const DownloadItem = styled.div`
 `;
 
 export const Button = styled.a`
+  -webkit-text-stroke: 0.6px #000;
   display: inline-block;
   background-color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
   color: ${Colors.secondary};

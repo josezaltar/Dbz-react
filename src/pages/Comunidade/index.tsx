@@ -30,6 +30,15 @@ const Comunidade: React.FC = () => {
             Grupo do WhatsApp
           </a>
         </li>
+        <li>
+          <a
+            href="        https://www.instagram.com/dbz.revolution/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Siga nosso Instagram
+          </a>
+        </li>
       </List>
     </Container>
   );

@@ -1,6 +1,12 @@
 // src/styles/comunidade/styles.ts
 import styled from "styled-components";
-import { Colors, Spacing, Breakpoints, Shadows } from "../../styles/variables"; // Importando as variáveis
+import {
+  Colors,
+  Spacing,
+  Breakpoints,
+  Shadows,
+  Fonts,
+} from "../../styles/variables"; // Importando as variáveis
 
 export const Container = styled.section`
   padding: ${Spacing.large} ${Spacing.small};
@@ -21,17 +27,22 @@ export const Container = styled.section`
 
 export const Title = styled.h1`
   font-size: 3rem;
-  color: ${Colors.primary}; /* Cor do título definida em variables.ts */
-  margin-bottom: ${Spacing.large};
+  color: ${Colors.primary}; /* Cor do texto */
+  margin-bottom: ${Spacing.xLarge};
   text-align: center;
+  font-weight: bold;
+  font-family: ${Fonts.heading}; /* Usando a fonte personalizada */
+
+  /* Adicionando o contorno */
+  -webkit-text-stroke: 0.8px #000; /* Defina a espessura e a cor do contorno */
 
   /* Responsividade */
   @media (max-width: ${Breakpoints.tablet}) {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Ajusta o tamanho da fonte para dispositivos menores */
   }
 
   @media (max-width: ${Breakpoints.mobile}) {
-    font-size: 2rem;
+    font-size: 2rem; /* Ajusta o tamanho da fonte para dispositivos móveis */
   }
 `;
 
@@ -40,6 +51,7 @@ export const SubTitle = styled.h2`
   color: ${Colors.primary}; /* Cor do subtítulo definida em variables.ts */
   margin-bottom: ${Spacing.medium};
   text-align: center;
+  -webkit-text-stroke: 0.8px #000;
 `;
 
 export const Text = styled.p`

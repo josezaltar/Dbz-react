@@ -25,6 +25,7 @@ export const Title = styled.h1`
   color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: ${Spacing.xLarge};
   text-align: center;
+  -webkit-text-stroke: 0.8px #000;
 
   /* Responsividade */
   @media (max-width: ${Breakpoints.tablet}) {
@@ -88,6 +89,7 @@ export const Card = styled.div`
     color: ${Colors.primary};
     font-size: 1.25rem;
     margin-bottom: ${Spacing.small};
+    -webkit-text-stroke: 0.1px #000;
   }
 
   p {

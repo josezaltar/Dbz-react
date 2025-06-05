@@ -29,7 +29,7 @@ export const Title = styled.h1`
   color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: ${Spacing.xLarge};
   text-align: center; /* Centraliza o título */
-
+  -webkit-text-stroke: 0.8px #000;
   /* Responsividade */
   @media (max-width: ${Breakpoints.tablet}) {
     font-size: 2.5rem; /* Ajusta o tamanho da fonte para dispositivos menores */
