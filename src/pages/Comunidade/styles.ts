@@ -4,8 +4,8 @@ import {
   Colors,
   Spacing,
   Breakpoints,
-  Shadows,
   Fonts,
+  Shadows,
 } from "../../styles/variables"; // Importando as variáveis
 
 export const Container = styled.section`
@@ -17,7 +17,7 @@ export const Container = styled.section`
   max-width: 95%;
   margin: ${Spacing.large} auto;
   overflow: hidden;
-  box-shadow: ${Shadows.medium}; /* Usando uma sombra definida em variables.ts */
+  box-shadow: ${Shadows.heavy}; /* Sombras mais suaves */
 
   /* Responsividade */
   @media (max-width: ${Breakpoints.tablet}) {

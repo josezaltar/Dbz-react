@@ -11,7 +11,7 @@ export const Container = styled.section`
   max-width: 95%;
   margin: ${Spacing.large} auto;
   overflow: hidden;
-  box-shadow: ${Shadows.medium}; /* Usando sombra média definida em variables.ts */
+  box-shadow: ${Shadows.heavy}; /* Usando sombra média definida em variables.ts */
 
   /* Responsividade */
   @media (max-width: ${Breakpoints.tablet}) {

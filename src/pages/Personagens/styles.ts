@@ -1,6 +1,5 @@
-// src/pages/Personagens/styles.ts
 import styled from "styled-components";
-import { Colors, Spacing, Breakpoints } from "../../styles/variables"; // Importando as variáveis
+import { Colors, Spacing, Breakpoints, Shadows } from "../../styles/variables"; // Importando as variáveis
 
 // Container geral para centralizar o conteúdo
 export const Container = styled.section`
@@ -12,7 +11,7 @@ export const Container = styled.section`
   max-width: 95%;
   margin: ${Spacing.large} auto;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: ${Shadows.heavy};
 
   /* Responsividade */
   @media (max-width: ${Breakpoints.tablet}) {
@@ -21,7 +20,7 @@ export const Container = styled.section`
 `;
 
 export const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 5rem;
   color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: ${Spacing.xLarge};
   text-align: center;
@@ -30,10 +29,28 @@ export const Title = styled.h1`
   /* Responsividade */
   @media (max-width: ${Breakpoints.tablet}) {
     font-size: 2.5rem;
+    margin-bottom: ${Spacing.medium}; /* Ajustando a margem */
   }
 
   @media (max-width: ${Breakpoints.mobile}) {
     font-size: 2rem;
+    margin-bottom: ${Spacing.small}; /* Ajustando a margem */
+  }
+`;
+
+export const Section = styled.section`
+  margin-bottom: ${Spacing.large}; /* Adicionando espaço entre as seções */
+  padding: ${Spacing.small} 0;
+  box-shadow: ${Shadows.light};
+
+  /* Opcional: Adicionar uma linha entre as seções */
+  border-bottom: 1px solid ${Colors.secondary};
+
+  & > h2 {
+    margin-bottom: ${Spacing.small};
+    color: ${Colors.primary};
+    font-size: 2rem;
+    text-align: center;
   }
 `;
 
@@ -70,12 +87,13 @@ export const PersonagemContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  background-color: #000000; /* Cor do card agora preta */
+  background-color: ${Colors.cardBackground}; /* Cor do card agora mais clara e harmônica */
   color: ${Colors.secondary};
-  border-radius: 8px;
+  border-radius: 12px; /* Bordas mais arredondadas */
   padding: ${Spacing.medium};
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave para o card */
   text-align: center;
+  transition: all 0.3s ease-in-out; /* Transição suave no hover */
 
   img {
     width: 100%;
@@ -89,16 +107,19 @@ export const Card = styled.div`
     color: ${Colors.primary};
     font-size: 1.25rem;
     margin-bottom: ${Spacing.small};
-    -webkit-text-stroke: 0.1px #000;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #000; /* Contraste maior para o texto */
   }
 
   p {
     font-size: 1rem;
     color: ${Colors.secondary};
+    margin-top: ${Spacing.small};
   }
 
   &:hover {
-    background-color: ${Colors.hover};
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: ${Colors.cardHover}; /* Alteração da cor de fundo no hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Aumento da sombra no hover */
+    transform: translateY(-5px); /* Efeito de elevação suave no hover */
   }
 `;

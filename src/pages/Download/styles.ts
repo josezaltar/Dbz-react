@@ -11,7 +11,7 @@ export const Container = styled.section`
   max-width: 95%;
   margin: ${Spacing.large} auto;
   overflow: hidden;
-  box-shadow: ${Shadows.medium}; /* Usando sombra média definida em variables.ts */
+  box-shadow: ${Shadows.heavy}; /* Usando sombra média definida em variables.ts */
 
   @media (max-width: ${Breakpoints.tablet}) {
     padding: ${Spacing.medium} ${Spacing.small};
@@ -54,7 +54,7 @@ export const Button = styled.a`
 
   &:hover,
   &:focus {
-    background-color: ${Colors.hover}; /* Usando a cor de hover definida em variables.ts */
+    background-color: ${Colors.cardHover}; /* Usando a cor de hover definida em variables.ts */
     transform: scale(1.05);
     outline: none;
   }

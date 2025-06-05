@@ -9,7 +9,7 @@ export const Container = styled.section`
   background-color: ${Colors.background}; /* Usando a cor de fundo definida em variables.ts */
   color: ${Colors.secondary}; /* Usando a cor de texto definida em variables.ts */
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombras mais suaves */
+  box-shadow: 0 4px 15px rgb(255, 255, 255); /* Sombras mais suaves */
   max-width: 95%;
   margin: ${Spacing.large} auto;
   overflow: hidden;

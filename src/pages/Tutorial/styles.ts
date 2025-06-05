@@ -1,6 +1,6 @@
 // src/pages/Tutorial/styles.ts
 import styled from "styled-components";
-import { Colors, Spacing, Breakpoints } from "../../styles/variables"; // Importando as variáveis
+import { Colors, Spacing, Breakpoints, Shadows } from "../../styles/variables"; // Importando as variáveis
 
 // Container para o conteúdo da página
 export const Container = styled.section`
@@ -12,7 +12,7 @@ export const Container = styled.section`
   max-width: 95%;
   margin: ${Spacing.large} auto;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: ${Shadows.medium}; /* Usando sombra média definida em variables.ts */
 
   /* Responsividade */
   @media (max-width: ${Breakpoints.tablet}) {
@@ -45,6 +45,7 @@ export const Content = styled.div`
   border-radius: 10px;
   color: ${Colors.secondary};
   width: 70%; /* Ajuste o tamanho do conteúdo principal */
+  box-shadow: ${Shadows.medium};
 `;
 
 export const ContentTitle = styled.h2`
@@ -68,16 +69,18 @@ export const List = styled.ul`
   background-color: ${Colors.background}; /* Alterado para combinar com o fundo */
   border-radius: 10px;
   width: 100%;
+  box-shadow: ${Shadows.medium};
 `;
 
 export const ListItem = styled.li<{ selected: boolean }>`
   padding: ${Spacing.small} ${Spacing.medium};
   color: ${Colors.secondary};
   cursor: pointer;
+  border-radius: 10px;
   background-color: ${(props) =>
     props.selected ? `${Colors.primary}` : "transparent"};
 
   &:hover {
-    background-color: ${Colors.hover};
+    background-color: ${Colors.cardHover};
   }
 `;
