@@ -1,12 +1,6 @@
 // src/styles/comunidade/styles.ts
 import styled from "styled-components";
-import {
-  Colors,
-  Spacing,
-  Breakpoints,
-  Shadows,
-  Fonts,
-} from "../../styles/variables"; // Importando as variáveis
+import { Colors, Spacing, Breakpoints, Shadows } from "../../styles/variables"; // Importando as variáveis
 
 export const Container = styled.section`
   padding: ${Spacing.large} ${Spacing.small};

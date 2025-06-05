@@ -1,5 +1,4 @@
 // src/styles/variables.ts
-
 export const Colors = {
   primary: "#ff6600", // Cor laranja principal
   secondary: "#f0f0f0", // Cor de texto
@@ -8,8 +7,8 @@ export const Colors = {
 };
 
 export const Fonts = {
-  primary: "'Arial', sans-serif", // Fonte principal
-  heading: "'Roboto', sans-serif", // Fonte para títulos
+  primary: "'Arial', sans-serif", // Fonte principal para o corpo
+  heading: "'SaiyanSans', sans-serif", // Fonte personalizada para os títulos
 };
 
 export const Spacing = {

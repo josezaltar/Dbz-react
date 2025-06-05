@@ -1,9 +1,16 @@
 // src/styles/styles.ts
 import { createGlobalStyle } from "styled-components";
-import { Colors, Fonts, Spacing, Shadows } from "./variables"; // Importando as variáveis
+import { Colors, Fonts } from "./variables"; // Importando as variáveis
 
-// Estilos globais usando styled-components
 export const GlobalStyle = createGlobalStyle`
+  /* Carregar a fonte personalizada */
+  @font-face {
+    font-family: 'SaiyanSans';
+    src: url('/assets/fonts/SaiyanSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   /* Reset de margens e paddings */
   * {
     margin: 0;
@@ -13,16 +20,15 @@ export const GlobalStyle = createGlobalStyle`
 
   /* Estilos globais para o body */
   body {
-    font-family: ${Fonts.primary}; /* Usando a fonte do arquivo variables.ts */
-    background-color: ${Colors.background}; /* Usando a cor de fundo do arquivo variables.ts */
-    color: ${Colors.secondary}; /* Usando a cor do texto do arquivo variables.ts */
+    font-family: ${Fonts.primary}; /* Usando a fonte principal para o corpo */
+    background-color: ${Colors.background};
+    color: ${Colors.secondary};
     line-height: 1.6;
   }
 
-  /* Estilo para o título principal h1 */
-  h1 {
-    font-size: 2rem;
-    color: ${Colors.primary}; /* Usando a cor do título do arquivo variables.ts */
+  /* Estilo para títulos */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: ${Fonts.heading}; /* Usando a fonte SaiyanSans para os títulos */
   }
 
   /* Estilo para links */
@@ -30,4 +36,5 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+
 `;
