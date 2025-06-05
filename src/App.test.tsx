@@ -1,9 +1,10 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import App from "./App"; // Não envolva com BrowserRouter aqui
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("renders the home page with welcome message", () => {
+  render(<App />); // Apenas renderiza o App diretamente
+  expect(
+    screen.getByText(/Bem-vindo ao Dragon Ball Z Revolution/i)
+  ).toBeInTheDocument();
 });
