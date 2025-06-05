@@ -1,18 +1,18 @@
 import React from "react";
-import { Container, Title, List } from "./styles"; // Importa os estilos
+import { Container, Title, SubTitle, Text, List } from "./styles"; // Importa os estilos
 
 const GuiaQuests: React.FC = () => {
   return (
     <Container>
       <Title>Guia de Quests</Title>
-      <p>
+      <Text>
         Embarque em missões épicas, ajude personagens icônicos e desvende os
         mistérios do universo Dragon Ball Z Revolution! As quests são essenciais
         para sua progressão, oferecendo experiência, itens e desbloqueando novas
         áreas e sagas.
-      </p>
+      </Text>
 
-      <h2>Tipos de Quests</h2>
+      <SubTitle>Tipos de Quests</SubTitle>
       <List>
         <li>
           <strong>Quests Principais (Sagas):</strong> Siga a história do jogo,
@@ -36,17 +36,17 @@ const GuiaQuests: React.FC = () => {
         </li>
       </List>
 
-      <h2>Começando sua Jornada</h2>
-      <p>
+      <SubTitle>Começando sua Jornada</SubTitle>
+      <Text>
         Fique atento aos NPCs com um ponto de exclamação (!) sobre suas cabeças
         – eles têm missões para você! As primeiras quests geralmente são
         introdutórias, ensinando as mecânicas básicas do jogo e guiando você
         pelas primeiras áreas.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Não hesite em explorar e conversar com todos os personagens que
         encontrar. Muitas aventuras esperam por você!
-      </p>
+      </Text>
     </Container>
   );
 };

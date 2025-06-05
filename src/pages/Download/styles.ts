@@ -1,54 +1,62 @@
+// src/pages/Download/styles.ts
 import styled from "styled-components";
+import { Colors, Spacing, Breakpoints, Shadows } from "../../styles/variables"; // Importando as variáveis
 
 export const Container = styled.section`
-  padding: 40px 0;
-  background-color: #1a252f;
-  color: #f0f0f0;
+  padding: ${Spacing.large} ${Spacing.small};
+  text-align: center; /* Centraliza o conteúdo */
+  background-color: ${Colors.background}; /* Usando a cor de fundo definida em variables.ts */
+  color: ${Colors.secondary}; /* Usando a cor de texto definida em variables.ts */
+  border-radius: 10px;
+  max-width: 95%;
+  margin: ${Spacing.large} auto;
+  overflow: hidden;
+  box-shadow: ${Shadows.medium}; /* Usando sombra média definida em variables.ts */
+
+  @media (max-width: ${Breakpoints.tablet}) {
+    padding: ${Spacing.medium} ${Spacing.small};
+  }
+`;
+
+export const Title = styled.h1`
+  font-size: 3rem;
+  color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
+  margin-bottom: ${Spacing.large};
+
+  @media (max-width: ${Breakpoints.tablet}) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const DownloadItem = styled.div`
-  background-color: #343a40;
-  padding: 25px;
-  margin: 20px auto;
-  border-radius: 8px;
+  padding: ${Spacing.medium};
+  margin: ${Spacing.medium} 0;
+  border-radius: 10px;
   max-width: 600px;
-  border: 1px solid #495057;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-
-  h3 {
-    color: #ff6600;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  p {
-    color: #f0f0f0;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  .download-info {
-    font-size: 14px;
-    color: #a0a0a0;
-  }
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const Button = styled.a`
   display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 12px 25px;
+  background-color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
+  color: ${Colors.secondary};
+  padding: ${Spacing.small} ${Spacing.medium};
   text-decoration: none;
   border-radius: 5px;
+  font-size: 1.25rem;
   font-weight: bold;
-  font-family: "SaiyanSans", Arial, sans-serif;
-  margin-top: 15px;
-  transition: background-color 0.3s ease;
+  margin-top: ${Spacing.medium};
+  transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover,
   &:focus {
-    background-color: #0056b3;
+    background-color: ${Colors.hover}; /* Usando a cor de hover definida em variables.ts */
+    transform: scale(1.05);
     outline: none;
+  }
+
+  &:active {
+    background-color: #b44000;
   }
 `;

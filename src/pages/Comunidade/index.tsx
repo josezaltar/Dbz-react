@@ -1,14 +1,16 @@
 import React from "react";
-import { Container, Title, List } from "./styles"; // Importa os estilos
+import { Container, Title, SubTitle, Text, List } from "./styles"; // Importa os estilos
 
 const Comunidade: React.FC = () => {
   return (
     <Container>
       <Title>Nossa Comunidade</Title>
-      <p>
+      <Text>
         Conecte-se com outros guerreiros, discuta estratégias, reporte bugs e
         fique por dentro de todas as novidades do Dragon Ball Z Revolution!
-      </p>
+      </Text>
+
+      <SubTitle>Participe agora</SubTitle>
       <List>
         <li>
           <a

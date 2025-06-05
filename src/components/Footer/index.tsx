@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         </p>
         <p>
           Dragon Ball Z e todos os personagens relacionados são marcas
-          registradas de Akira Toriyama...
+          registradas de Akira Toriyama
         </p>
       </Text>
     </Container>

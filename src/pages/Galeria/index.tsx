@@ -1,10 +1,17 @@
 import React from "react";
-import { Container, Title, VideoContainer } from "./styles"; // Importa os estilos
+import { Container, Title, SubTitle, Text, VideoContainer } from "./styles"; // Importa os estilos
 
 const Galeria: React.FC = () => {
   return (
     <Container>
       <Title>Galeria de Mídia</Title>
+      <Text>
+        Explore a galeria de vídeos e outros conteúdos relacionados ao universo
+        de Dragon Ball Z Revolution! Veja trailers, teasers e momentos épicos do
+        jogo.
+      </Text>
+
+      <SubTitle>Vídeo Oficial</SubTitle>
       <VideoContainer>
         <iframe
           width="560"

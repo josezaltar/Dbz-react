@@ -1,28 +1,81 @@
+// src/pages/Tutorial/styles.ts
 import styled from "styled-components";
+import { Colors, Spacing, Breakpoints } from "../../styles/variables"; // Importando as variáveis
 
+// Container para o conteúdo da página
 export const Container = styled.section`
-  padding: 40px 0;
-  background-color: #1a252f;
-  color: #f0f0f0;
+  padding: ${Spacing.xLarge} ${Spacing.medium};
+  text-align: center;
+  background-color: ${Colors.background}; /* Usando a cor de fundo definida em variables.ts */
+  color: ${Colors.secondary}; /* Usando a cor de texto definida em variables.ts */
+  border-radius: 10px;
+  max-width: 95%;
+  margin: ${Spacing.large} auto;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+  /* Responsividade */
+  @media (max-width: ${Breakpoints.tablet}) {
+    flex-direction: column;
+    padding: ${Spacing.large} ${Spacing.small};
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 3rem;
-  color: #ff6600;
+  color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
+  margin-bottom: ${Spacing.xLarge};
+  text-align: center; /* Centraliza o título */
+
+  /* Responsividade */
+  @media (max-width: ${Breakpoints.tablet}) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: ${Breakpoints.mobile}) {
+    font-size: 2rem;
+  }
+`;
+
+export const Content = styled.div`
+  flex-grow: 1;
+  padding: ${Spacing.medium};
+  background-color: #2c3e50;
+  border-radius: 10px;
+  color: ${Colors.secondary};
+  width: 70%; /* Ajuste o tamanho do conteúdo principal */
+`;
+
+export const ContentTitle = styled.h2`
+  font-size: 2rem;
+  color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
+  margin-bottom: ${Spacing.medium};
+`;
+
+export const ContentText = styled.p`
+  font-size: 1.25rem;
+  color: ${Colors.secondary};
   text-align: center;
-  margin-bottom: 20px;
+  line-height: 1.8;
 `;
 
 export const List = styled.ul`
-  list-style: none;
-  padding-left: 0;
-  font-size: 1.2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: ${Colors.background}; /* Alterado para combinar com o fundo */
+  border-radius: 10px;
+  width: 100%;
+`;
 
-  li {
-    margin-bottom: 15px;
-  }
+export const ListItem = styled.li<{ selected: boolean }>`
+  padding: ${Spacing.small} ${Spacing.medium};
+  color: ${Colors.secondary};
+  cursor: pointer;
+  background-color: ${(props) =>
+    props.selected ? `${Colors.primary}` : "transparent"};
 
-  strong {
-    color: #ff6600;
+  &:hover {
+    background-color: ${Colors.hover};
   }
 `;

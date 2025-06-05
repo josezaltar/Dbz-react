@@ -14,12 +14,6 @@ const Header: React.FC = () => {
             {/* Rota para Home */}
           </NavItem>
           <NavItem>
-            <NavLink as={Link} to="/about">
-              Sobre o Jogo
-            </NavLink>{" "}
-            {/* Rota para About */}
-          </NavItem>
-          <NavItem>
             <NavLink as={Link} to="/downloads">
               Downloads
             </NavLink>{" "}

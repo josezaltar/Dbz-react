@@ -1,16 +1,19 @@
+// src/styles/footer/styles.ts
 import styled from "styled-components";
+import { Colors, Spacing } from "../../styles/variables"; // Importando as variáveis
 
 export const Container = styled.footer`
-  background-color: #1a252f;
-  padding: 20px 0;
-  color: #f0f0f0;
+  background-color: ${Colors.background}; /* Usando a cor de fundo do arquivo variables.ts */
+  padding: ${Spacing.medium} 0;
+  color: ${Colors.secondary}; /* Usando a cor do texto do arquivo variables.ts */
   text-align: center;
 `;
 
 export const Text = styled.div`
   font-size: 1rem;
-  margin-top: 10px;
+  margin-top: ${Spacing.small};
+
   p {
-    margin-bottom: 10px;
+    margin-bottom: ${Spacing.small};
   }
 `;
