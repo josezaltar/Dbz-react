@@ -14,8 +14,10 @@ export const Fonts = {
 export const Spacing = {
   small: "8px",
   medium: "16px",
-  large: "24px",
-  xLarge: "40px",
+  large: "32px",
+  xLarge: "64px",
+  // Adicione a propriedade xsmall
+  xsmall: "4px", // Defina um valor adequado para xsmall
 };
 
 export const Breakpoints = {
