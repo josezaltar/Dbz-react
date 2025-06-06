@@ -12,6 +12,9 @@ import Galeria from "./pages/Galeria"; // Página Galeria
 import Comunidade from "./pages/Comunidade"; // Página Comunidade
 import Banner from "./components/Banner"; // Importa o componente Banner
 
+// Remover a importação do SpeedInsights, pois não é mais necessária
+// Não é necessário importar o pacote aqui, a coleta de métricas será feita automaticamente pelo script no index.html
+
 const App: React.FC = () => {
   return (
     <Router>
