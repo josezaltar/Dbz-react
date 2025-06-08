@@ -10,8 +10,11 @@ interface MenuProps {
   isOpen: boolean;
 }
 
-// Estilos do Container (Header)
-export const Container = styled.header`
+interface ContainerProps {
+  isOpen: boolean; // Defina o tipo da propriedade isOpen aqui
+}
+
+export const Container = styled.header<ContainerProps>`
   background-color: ${Colors.background};
   padding: 1rem;
   font-family: "Arial", sans-serif;
@@ -20,9 +23,36 @@ export const Container = styled.header`
   align-items: center;
   position: relative; /* Necessário para o posicionamento do ícone do menu */
   max-width: 100%;
+  transition: background-color 0.3s ease; /* Transição para o fundo */
+
+  /* Quando o menu estiver aberto, adicionamos um fundo escuro */
+  ${({ isOpen }) =>
+    isOpen &&
+    `
+      background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência */
+    `}
 
   @media (max-width: ${Breakpoints.tablet}) {
     justify-content: space-between;
+  }
+`;
+
+export const Overlay = styled.div<ContainerProps>`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência */
+  z-index: 4;
+  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+  opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
+  transition: all 0.3s ease;
+
+  /* Exibir o overlay apenas em dispositivos móveis e tablets */
+  @media (min-width: ${Breakpoints.tablet}) {
+    visibility: hidden;
+    opacity: 0;
   }
 `;
 
@@ -65,13 +95,20 @@ export const Menu = styled.div<MenuProps>`
   width: 100%;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
   visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+  background-color: ${({ isOpen }) =>
+    isOpen
+      ? "transparent" // Fundo escuro somente quando o menu está aberto
+      : "rgba(0, 0, 0, 0.7)"}; /* Para que o fundo do menu seja transparente antes de ser aberto */
 
   @media (max-width: ${Breakpoints.tablet}) {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    background-color: ${Colors.background};
+    background-color: ${({ isOpen }) =>
+      isOpen
+        ? "rgba(0, 0, 0, 0.7)"
+        : "transparent"}; /* Escurece apenas no mobile */
     flex-direction: column;
     width: 100%;
     height: 100vh;
@@ -81,7 +118,7 @@ export const Menu = styled.div<MenuProps>`
     z-index: 5;
   }
 
-  /* Menu visível para o desktop */
+  /* Para desktop, garantir o fundo normal */
   @media (min-width: ${Breakpoints.tablet}) {
     opacity: 1;
     visibility: visible;
@@ -89,6 +126,7 @@ export const Menu = styled.div<MenuProps>`
     flex-direction: row;
     height: auto;
     transform: none;
+    background-color: ${Colors.background}; /* Fundo padrão do desktop */
   }
 `;
 
@@ -98,27 +136,32 @@ export const NavList = styled.ul`
   justify-content: space-around;
   width: 100%;
   padding: 0;
+  background-color: ${Colors.background};
 
   @media (max-width: ${Breakpoints.tablet}) {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    padding: 0;
+    padding: 15px 10px;
+    border: ${Colors.primary} 5px solid;
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo escuro com transparência */
   }
 `;
 
 export const NavItem = styled.li`
-  margin: 0;
-  width: 100%; /* Garantindo que cada item ocupe 100% da largura do container */
-  height: 50px; /* Tamanho fixo de altura para os itens do menu */
+  margin: 0 5px;
+  width: 100%;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
-  white-space: nowrap; /* Impede a quebra de linha */
+  white-space: nowrap;
   border: ${Colors.primary} 0.3rem solid;
 
   @media (max-width: ${Breakpoints.tablet}) {
-    margin: 1rem 0;
+    margin: 8px 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo escuro com transparência */
   }
 `;
 
