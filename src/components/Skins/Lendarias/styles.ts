@@ -11,6 +11,7 @@ export const PersonagemContainer = styled.div`
 `;
 
 export const CardWrapper = styled.div`
+  /* Configuração do grid para os cards */
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 cards por linha */
   gap: ${Spacing.medium}; /* Espaçamento entre os cards */
@@ -20,7 +21,7 @@ export const CardWrapper = styled.div`
 
   /* Responsividade */
   @media (max-width: 1200px) {
-    grid-template-columns: repeat(4, 1fr); /* Ajuste para telas menores */
+    grid-template-columns: repeat(4, 1fr); /* 4 cards por linha */
   }
 
   @media (max-width: 900px) {
@@ -34,10 +35,16 @@ export const CardWrapper = styled.div`
   @media (max-width: 400px) {
     grid-template-columns: 1fr; /* 1 card por linha */
   }
+
+  /* Centraliza o último item na última linha */
+  &:last-child {
+    grid-column: span 4; /* Faz o último item ocupar toda a largura disponível */
+    justify-self: center; /* Centraliza o item */
+  }
 `;
 
 export const Card = styled.div`
-  background-color: ${Colors.cardBackground};
+  background-color: ${Colors.cardHover};
   color: ${Colors.secondary};
   border-radius: 12px;
   padding: ${Spacing.medium};
@@ -60,9 +67,9 @@ export const Card = styled.div`
   h3 {
     color: ${Colors.primary};
     font-size: 2.2rem;
-    margin-bottom: ${Spacing.small};
+    margin-bottom: 0;
     font-weight: bold;
-    -webkit-text-stroke: 0.4px #000;
+    -webkit-text-stroke: 0.7px #000;
     margin-top: 0;
     border-bottom: 1px solid #fff;
   }
@@ -74,11 +81,11 @@ export const Card = styled.div`
 
   h4 {
     color: ${Colors.primary};
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: ${Spacing.medium};
     margin-bottom: ${Spacing.small};
     font-weight: 600;
-    -webkit-text-stroke: 0.3px #000;
+    -webkit-text-stroke: 0.5px #000;
   }
 
   p {

@@ -7,8 +7,7 @@ const Galeria: React.FC = () => {
       <Title>Galeria de Mídia</Title>
       <Text>
         Explore a galeria de vídeos e outros conteúdos relacionados ao universo
-        de Dragon Ball Z Revolution! Veja trailers, teasers e momentos épicos do
-        jogo.
+        de DBZ Revolution! Veja trailers, teasers e momentos épicos do jogo.
       </Text>
 
       <SubTitle>Vídeo Oficial</SubTitle>

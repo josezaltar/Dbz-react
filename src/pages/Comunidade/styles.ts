@@ -74,13 +74,22 @@ export const Text = styled.p`
 export const List = styled.ul`
   list-style-type: none;
   padding: 0;
-  margin: ${Spacing.small} ${Spacing.medium};
+  margin: 0 auto; /* Centraliza a lista */
   text-align: center;
+  display: flex;
+  flex-direction: column; /* Organiza os itens verticalmente */
+  align-items: center; /* Centraliza os itens no eixo X */
+  gap: 15px; /* Espaço entre os itens da lista */
+  width: 100%; /* Garante que a lista ocupe o espaço disponível */
 
   li {
     font-size: 1.1rem;
-    margin-bottom: ${Spacing.small};
     color: ${Colors.secondary};
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo de cada li */
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    width: 100%; /* Faz com que cada item ocupe 100% da largura disponível */
 
     strong {
       color: ${Colors.primary}; /* Cor para o texto em negrito */
@@ -89,6 +98,16 @@ export const List = styled.ul`
     a {
       color: rgb(53, 21, 230);
       text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Garante que o ícone e o texto fiquem alinhados no centro */
+      gap: 10px; /* Espaço entre o ícone e o texto */
+      width: 100%; /* Faz o link ocupar 100% do espaço do item */
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
     }
   }
 `;

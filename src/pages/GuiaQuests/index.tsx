@@ -7,16 +7,16 @@ const GuiaQuests: React.FC = () => {
       <Title>Guia de Quests</Title>
       <Text>
         Embarque em missões épicas, ajude personagens icônicos e desvende os
-        mistérios do universo Dragon Ball Z Revolution! As quests são essenciais
-        para sua progressão, oferecendo experiência, itens e desbloqueando novas
-        áreas e sagas.
+        mistérios do universo DBZ Revolution! As quests são essenciais para sua
+        progressão, oferecendo experiência, itens e desbloqueando novas áreas e
+        sagas.
       </Text>
 
       <SubTitle>Tipos de Quests</SubTitle>
       <List>
         <li>
           <strong>Quests Principais (Sagas):</strong> Siga a história do jogo,
-          revivendo momentos cruciais das sagas de Dragon Ball Z.
+          revivendo momentos cruciais das sagas de DBZ.
         </li>
         <li>
           <strong>Quests Secundárias:</strong> Missões opcionais oferecidas por

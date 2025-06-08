@@ -7,20 +7,22 @@ export const Container = styled.footer`
   padding: ${Spacing.medium} 0;
   color: ${Colors.secondary}; /* Usando a cor do texto do arquivo variables.ts */
   text-align: center;
-  font-size: 1rem;
+  font-size: 1rem; /* Usando rem para o tamanho da fonte */
 
   @media (max-width: ${Breakpoints.tablet}) {
     padding: ${Spacing.small} 0; /* Ajuste o padding para dispositivos menores */
+    font-size: 0.95rem; /* Ajuste o tamanho da fonte para tablets */
   }
 
   @media (max-width: ${Breakpoints.mobile}) {
-    font-size: 0.9rem; /* Reduz o tamanho da fonte em dispositivos móveis */
+    font-size: 0.85rem; /* Ajuste o tamanho da fonte em dispositivos móveis */
+    padding: ${Spacing.small} 0; /* Ajuste o padding para telas pequenas */
   }
 `;
 
 export const Text = styled.div`
-  font-size: 1rem;
-  margin-top: ${Spacing.small};
+  font-size: 1rem; /* Usando rem para o tamanho da fonte */
+  margin-top: ${Spacing.small}; /* Usando rem para a margem superior */
 
   p {
     margin-bottom: ${Spacing.small};

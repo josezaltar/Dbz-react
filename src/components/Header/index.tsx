@@ -1,52 +1,70 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Importa o Link para navegação
-import { Container, NavList, NavItem, NavLink } from "./styles"; // Importa os estilos
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import {
+  Container,
+  NavList,
+  NavItem,
+  NavLink,
+  HamburgerIcon,
+  Menu,
+} from "./styles"; // Importando estilos
 
 const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Alterna o estado do menu
+  };
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // Fecha o menu ao clicar em um link
+  };
+
   return (
     <Container>
-      <nav>
+      {/* Ícone de Menu Sanduíche */}
+      <HamburgerIcon onClick={handleToggleMenu}>Menu</HamburgerIcon>
+
+      {/* Menu (visível somente em dispositivos móveis) */}
+      <Menu isOpen={isMenuOpen}>
         <NavList>
           <NavItem>
-            <NavLink as={Link} to="/">
+            <NavLink as={Link} to="/" onClick={handleLinkClick}>
               Início
-            </NavLink>{" "}
-            {/* Rota para Home */}
-          </NavItem>
-          <NavItem>
-            <NavLink as={Link} to="/downloads">
-              Downloads
-            </NavLink>{" "}
-            {/* Rota para Downloads */}
-          </NavItem>
-          <NavItem>
-            <NavLink as={Link} to="/personagens">
-              Personagens
-            </NavLink>{" "}
-            {/* Rota para Personagens */}
-          </NavItem>
-          <NavItem>
-            <NavLink as={Link} to="/comandos">
-              Comandos do Jogo
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink as={Link} to="/quests">
+            <NavLink as={Link} to="/downloads" onClick={handleLinkClick}>
+              Downloads
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink as={Link} to="/personagens" onClick={handleLinkClick}>
+              Personagens
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink as={Link} to="/comandos" onClick={handleLinkClick}>
+              Comandos
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink as={Link} to="/quests" onClick={handleLinkClick}>
               Guia de Quests
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink as={Link} to="/galeria">
+            <NavLink as={Link} to="/galeria" onClick={handleLinkClick}>
               Galeria
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink as={Link} to="/comunidade">
+            <NavLink as={Link} to="/comunidade" onClick={handleLinkClick}>
               Comunidade
             </NavLink>
           </NavItem>
         </NavList>
-      </nav>
+      </Menu>
     </Container>
   );
 };

@@ -1,11 +1,11 @@
-// src/styles/variables.ts
 export const Colors = {
-  background: "#1a1a1a", // Cor de fundo geral
-  secondary: "#fff", // Cor de texto secundária
-  primary: "#ff9800", // Cor primária para destaque
-  cardBackground: "#333", // Cor de fundo dos cards
-  cardHover: "#444", // Cor de fundo no hover dos cards
-  black: "#000",
+  background: "#1a1a1a", // Cor de fundo geral: **Preto escuro** ou **Cinza muito escuro**
+  secondary: "#fff", // Cor de texto secundária: **Branco**
+  primary: "#ff9800", // Cor primária para destaque: **Laranja** (um laranja vibrante)
+  cardBackground: "#333", // Cor de fundo dos cards: **Cinza escuro**
+  cardHover: "#444", // Cor de fundo no hover dos cards: **Cinza mais claro que o cardBackground** (ainda escuro, mas um tom diferente)
+  black: "#000", // Cor preta: **Preto**
+  red: "#f44336",
 };
 
 export const Fonts = {
@@ -24,7 +24,7 @@ export const Spacing = {
 
 export const Breakpoints = {
   mobile: "480px",
-  tablet: "768px",
+  tablet: "920px",
   desktop: "1024px",
 };
 

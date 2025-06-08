@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Title, Section } from "./styles"; // Importando o container, título e Section
+import { Container, Title, Section, SectionFinal } from "./styles"; // Importando o container, título e Section
 import Comum from "../../components/Skins/Comum"; // Importando o componente Comum
 import Raras from "../../components/Skins/Raros"; // Importando o componente Raras
 import Epicos from "../../components/Skins/Epicos"; // Importando o componente Epicos
@@ -9,9 +9,6 @@ const Personagens: React.FC = () => {
   return (
     <section id="personagens">
       <Container>
-        {/* Container centralizado */}
-        <Title>Personagens</Title>
-
         {/* Seções de personagens */}
         <Section>
           <Title>Comuns</Title>
@@ -28,10 +25,10 @@ const Personagens: React.FC = () => {
           <Epicos /> {/* Exibindo personagens épicos */}
         </Section>
 
-        <Section>
+        <SectionFinal>
           <Title>Lendários</Title>
           <Lendarios /> {/* Exibindo personagens lendários */}
-        </Section>
+        </SectionFinal>
       </Container>
     </section>
   );

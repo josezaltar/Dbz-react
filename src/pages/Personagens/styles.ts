@@ -41,10 +41,19 @@ export const Title = styled.h1`
 export const Section = styled.section`
   margin-bottom: ${Spacing.large}; /* Adicionando espaço entre as seções */
   padding: ${Spacing.small} 0;
-  box-shadow: ${Shadows.light};
 
-  /* Opcional: Adicionar uma linha entre as seções */
-  border-bottom: 1px solid ${Colors.secondary};
+  border-bottom: 3px solid ${Colors.primary};
+
+  & > h2 {
+    margin-bottom: ${Spacing.small};
+    color: ${Colors.primary};
+    font-size: 2rem;
+    text-align: center;
+  }
+`;
+export const SectionFinal = styled.section`
+  margin-bottom: ${Spacing.large}; /* Adicionando espaço entre as seções */
+  padding: ${Spacing.small} 0;
 
   & > h2 {
     margin-bottom: ${Spacing.small};

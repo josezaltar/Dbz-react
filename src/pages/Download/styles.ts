@@ -14,40 +14,75 @@ export const Container = styled.section`
   box-shadow: ${Shadows.heavy}; /* Usando sombra média definida em variables.ts */
 
   @media (max-width: ${Breakpoints.tablet}) {
-    padding: ${Spacing.medium} ${Spacing.small};
+    padding: ${Spacing.medium} ${Spacing.small}; /* Ajuste do padding para tablets */
+  }
+
+  @media (max-width: ${Breakpoints.mobile}) {
+    padding: ${Spacing.small} ${Spacing.xsmall}; /* Ajuste do padding para dispositivos móveis */
   }
 `;
 
 export const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 8rem;
   color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
-  margin-bottom: ${Spacing.large};
+  margin-bottom: 0;
   -webkit-text-stroke: 0.8px #000;
 
   @media (max-width: ${Breakpoints.tablet}) {
-    font-size: 2.5rem;
+    font-size: 4rem; /* Ajuste para tablets */
+    -webkit-text-stroke: 1px #000;
+  }
+
+  @media (max-width: ${Breakpoints.mobile}) {
+    font-size: 4rem; /* Ajuste para dispositivos móveis */
+    -webkit-text-stroke: 1px #000;
   }
 `;
 
 export const DownloadItem = styled.div`
   -webkit-text-stroke: 0.2px #000;
-  padding: ${Spacing.medium};
-  margin: ${Spacing.medium} 0;
+  padding: ${Spacing.medium} ${Spacing.xsmall};
+  margin: ${Spacing.xsmall} 0;
   border-radius: 10px;
-  max-width: 600px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+
+  h3 {
+    font-size: 4rem;
+    color: ${Colors.primary};
+
+    @media (max-width: ${Breakpoints.tablet}) {
+      font-size: 2.5rem; /* Ajuste para tablets */
+    }
+
+    @media (max-width: ${Breakpoints.mobile}) {
+      font-size: 2rem; /* Ajuste para dispositivos móveis */
+    }
+  }
+
+  p {
+    font-size: 1.7rem;
+
+    @media (max-width: ${Breakpoints.tablet}) {
+      font-size: 1.4rem; /* Ajuste para tablets */
+    }
+
+    @media (max-width: ${Breakpoints.mobile}) {
+      font-size: 1.2rem; /* Ajuste para dispositivos móveis */
+    }
+  }
 `;
 
 export const Button = styled.a`
-  -webkit-text-stroke: 0.6px #000;
+  -webkit-text-stroke: 1.2px ${Colors.black};
   display: inline-block;
-  background-color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
+  background-color: ${Colors.red}; /* Usando a cor primária definida em variables.ts */
   color: ${Colors.secondary};
   padding: ${Spacing.small} ${Spacing.medium};
   text-decoration: none;
   border-radius: 5px;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-top: ${Spacing.medium};
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -61,5 +96,13 @@ export const Button = styled.a`
 
   &:active {
     background-color: #b44000;
+  }
+
+  @media (max-width: ${Breakpoints.tablet}) {
+    font-size: 1.6rem; /* Ajuste para tablets */
+  }
+
+  @media (max-width: ${Breakpoints.mobile}) {
+    font-size: 1.4rem; /* Ajuste para dispositivos móveis */
   }
 `;

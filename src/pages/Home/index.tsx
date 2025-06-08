@@ -5,14 +5,13 @@ const Home: React.FC = () => {
   return (
     <div>
       <Container>
-        <Title>Bem-vindo ao Dragon Ball Z Revolution!</Title>
+        <Title>Bem-vindo ao DBZ Revolution!</Title>
         <Text>
-          Prepare-se para a jornada de sua vida!{" "}
-          <strong>Dragon Ball Z Revolution</strong> é um MMORPG 2D desenvolvido
-          por fãs para fãs, inspirado no incrível universo de Dragon Ball Z.
-          Entre no mundo onde você pode treinar ao lado de seus heróis e vilões
-          favoritos, explorar as icônicas sagas de Dragon Ball, e lutar para se
-          tornar o guerreiro mais forte do universo!
+          Prepare-se para a jornada de sua vida! <strong>DBZ Revolution</strong>{" "}
+          é um MMORPG 2D desenvolvido por fãs para fãs, inspirado no incrível
+          universo de DBZ. Entre no mundo onde você pode treinar ao lado de seus
+          heróis e vilões favoritos, explorar as icônicas sagas de DB, e lutar
+          para se tornar o guerreiro mais forte do universo!
         </Text>
 
         <Text>
@@ -49,9 +48,8 @@ const Home: React.FC = () => {
         </Text>
 
         <Text>
-          Junte-se à comunidade de <strong>Dragon Ball Z Revolution</strong> e
-          mostre a todos o verdadeiro significado de ser um{" "}
-          <strong>Guerreiro Z</strong>!
+          Junte-se à comunidade de <strong>DBZ Revolution</strong> e mostre a
+          todos o verdadeiro significado de ser um <strong>Guerreiro Z</strong>!
         </Text>
       </Container>
     </div>

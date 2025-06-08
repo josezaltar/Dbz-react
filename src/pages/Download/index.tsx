@@ -7,7 +7,7 @@ const Download: React.FC = () => {
       <Title>Download</Title>
 
       <DownloadItem>
-        <h3>Cliente Completo - Dragon Ball Z Revolution</h3>
+        <h3>Cliente Completo - DBZ Revolution</h3>
         <p>Sistema: Windows</p>
         <p>Tamanho: 91,3 MB</p>
         <Button
