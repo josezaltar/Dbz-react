@@ -1,0 +1,454 @@
+import Raditz from "../assets/images/stage/raditz.jpg";
+import Nappa from "../assets/images/stage/nappa.jpg";
+import Vegeta from "../assets/images/stage/vegeta.png";
+import OozaruVegeta from "../assets/images/stage/ouzaru.jpg";
+import Turles from "../assets/images/stage/turles.png";
+import Cui from "../assets/images/stage/cui.png";
+import Dodoria from "../assets/images/stage/dodoria.jpg";
+import Zarbon from "../assets/images/stage/zarbon.jpg";
+import Guldo from "../assets/images/stage/guldo.jpg";
+import Recome from "../assets/images/stage/recoome.png";
+import Burter from "../assets/images/stage/burter.png";
+import Jeice from "../assets/images/stage/jeice.png";
+import Ginyu from "../assets/images/stage/ginyu.jpg";
+import LordSlug from "../assets/images/stage/LordSlug.jpg";
+import FreezaForm1 from "../assets/images/stage/freeza1.jpg";
+import FreezaForm2 from "../assets/images/stage/freeza2.jpg";
+import FreezaForm3 from "../assets/images/stage/freeza3.png";
+import FreezaFinal from "../assets/images/stage/freeza4.jpg";
+import GarlicJr from "../assets/images/stage/GarlicJr.png";
+import Coola from "../assets/images/stage/coola.png";
+import SuperCoola from "../assets/images/stage/supercoola.png";
+import MetalCoola from "../assets/images/stage/metalcoola.png";
+import MechaFreeza from "../assets/images/stage/mechfreeza.jpg";
+import KingCold from "../assets/images/stage/kingcold.png";
+import Android19 from "../assets/images/stage/android19.png";
+
+export const personagensData = [
+  {
+    id: 1,
+    name: "Raditz",
+    image: Raditz,
+    story:
+      "Raditz é um dos primeiros vilões da série DBZ e o irmão de Goku. Ele é um guerreiro Saiyajin, conhecido por sua brutalidade e pela sua chegada à Terra para conquistar o planeta.",
+    quest: ["Derrote 10 inimigos Saiyajins", "Coletar 100x Zeni"],
+    drops: {
+      minions: ["10x Zeni: 40%"],
+      boss: [
+        "50x Zeni: 70%",
+        "1x Engrenagem A: 40%",
+        "1x Gohan Boots Z: 30%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 2,
+    name: "Nappa",
+    image: Nappa,
+    story:
+      "Nappa é um dos membros da elite dos Saiyajins e serve como subordinado de Vegeta. Ele é grande e forte, conhecido por sua brutalidade e por ser um dos principais vilões da saga dos Saiyajins.",
+    quest: ["Vença Nappa e prove sua força!", "Coletar 200x Zeni"],
+    drops: {
+      minions: ["20x Zeni: 40%"],
+      boss: [
+        "100x Zeni: 70%",
+        "1x Engrenagem C: 20%",
+        "1x Gohan Armor Z: 30%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 3,
+    name: "Vegeta",
+    image: Vegeta,
+    story:
+      "Vegeta é o príncipe dos Saiyajins e um dos personagens mais complexos de DB. Inicialmente um vilão, ele se torna um dos maiores aliados de Goku e de seus amigos.",
+    quest: ["Derrote 20 inimigos Saiyajins", "Colete 300x Zeni"],
+    drops: {
+      minions: ["30x Zeni: 40%"],
+      boss: [
+        "150x Zeni: 70%",
+        "1x Gohan Bracer Z: 30%",
+        "1x Box Kame House: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 4,
+    name: "Oozaru Vegeta",
+    image: OozaruVegeta,
+    story:
+      "Oozaru Vegeta é a versão gigantesca e furiosa de Vegeta, quando ele se transforma no macaco gigante durante a luta contra Goku na Terra.",
+    quest: [
+      "Derrote Oozaru Vegeta em sua forma gigantesca",
+      "Coletar 500x Zeni",
+    ],
+    drops: {
+      minions: ["50x Zeni: 40%"],
+      boss: [
+        "250x Zeni: 70%",
+        "1x Goku Bracer Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 5,
+    name: "Turles",
+    image: Turles,
+    story:
+      "Turles é um Saiyajin de um universo alternativo e o principal vilão do filme 'O Super Guerreiro'. Ele se assemelha fisicamente a Goku, mas é um vilão impiedoso.",
+    quest: ["Derrote Turles e sua árvore mágica", "Coletar 700x Zeni"],
+    drops: {
+      minions: ["70x Zeni: 40%"],
+      boss: [
+        "350x Zeni: 70%",
+        "1x Goku Pants Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 6,
+    name: "Cui",
+    image: Cui,
+    story:
+      "Cui é um dos subordinados de Freeza, que serve como comandante do exército de Freeza durante a saga Namekusei. Ele é derrotado por Vegeta.",
+    quest: ["Derrote Cui no campo de batalha", "Coletar 500x Zeni"],
+    drops: {
+      minions: ["50x Zeni: 40%"],
+      boss: [
+        "250x Zeni: 70%",
+        "1x Goku Bracer Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 7,
+    name: "Dodoria",
+    image: Dodoria,
+    story:
+      "Dodoria é um dos subordinados de Freeza. Ele é um guerreiro forte e cruel que ajuda Freeza durante a invasão de Namekusei.",
+    quest: ["Vença Dodoria e mostre seu poder!", "Coletar 1000x Zeni"],
+    drops: {
+      minions: ["100x Zeni: 40%"],
+      boss: [
+        "500x Zeni: 70%",
+        "1x Goku Armor Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 8,
+    name: "Zarbon",
+    image: Zarbon,
+    story:
+      "Zarbon é outro subordinado de Freeza e é um guerreiro de grande beleza, mas também de imensa força. Ele tem a habilidade de se transformar em uma forma mais poderosa.",
+    quest: ["Derrote Zarbon em sua forma original", "Coletar 1200x Zeni"],
+    drops: {
+      minions: ["130x Zeni: 40%"],
+      boss: [
+        "650x Zeni: 70%",
+        "1x Goku Boots Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 9,
+    name: "Guldo",
+    image: Guldo,
+    story:
+      "Guldo é um dos membros da Força Ginyu e possui a habilidade de parar o tempo por um curto período. Ele é derrotado por Goku.",
+    quest: ["Vença Guldo após ele parar o tempo", "Coletar 1500x Zeni"],
+    drops: {
+      minions: ["200x Zeni: 40%"],
+      boss: [
+        "850x Zeni: 70%",
+        "1x Goku Bracer Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 10,
+    name: "Recoome",
+    image: Recome,
+    story:
+      "Recoome é um dos membros da Força Ginyu e é conhecido por sua força física impressionante. Ele é derrotado por Goku.",
+    quest: ["Derrote Recome em uma batalha épica", "Coletar 2000x Zeni"],
+    drops: {
+      minions: ["230x Zeni: 40%"],
+      boss: [
+        "1.150x Zeni: 70%",
+        "1x Nappa Skirt Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 11,
+    name: "Burter",
+    image: Burter,
+    story:
+      "Burter é um dos membros da Força Ginyu, e é conhecido por ser o homem mais rápido do universo. Ele é derrotado por Goku.",
+    quest: [
+      "Derrote Burter, o homem mais rápido do universo",
+      "Coletar 2500x Zeni",
+    ],
+    drops: {
+      minions: ["300x Zeni: 40%"],
+      boss: [
+        "1.500x Zeni: 70%",
+        "1x Nappa Armor Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 12,
+    name: "Jeice",
+    image: Jeice,
+    story:
+      "Jeice é um dos membros da Força Ginyu, e tem um ataque poderoso chamado 'Crusher Ball'. Ele é derrotado por Goku.",
+    quest: ["Vença Jeice e sua Crusher Ball", "Coletar 3000x Zeni"],
+    drops: {
+      minions: ["380x Zeni: 40%"],
+      boss: [
+        "1.600x Zeni: 70%",
+        "1x Nappa Bracer Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 13,
+    name: "Ginyu",
+    image: Ginyu,
+    story:
+      "Ginyu é o líder da Força Ginyu e tem a habilidade de trocar de corpo com outra pessoa. Ele é derrotado por Goku após uma troca de corpo.",
+    quest: [
+      "Derrote Ginyu e sua habilidade de troca de corpo",
+      "Coletar 3500x Zeni",
+    ],
+    drops: {
+      minions: ["500x Zeni: 40%"],
+      boss: [
+        "2.500x Zeni: 70%",
+        "1x Nappa Boots Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 14,
+    name: "Lord Slug",
+    image: LordSlug,
+    story:
+      "Lord Slug é um vilão do filme 'Dragon Ball Z: O Super Guerreiro', e é um Namekusei que tem o poder de transformar os outros em pedra.",
+    quest: ["Derrote Lord Slug e seus seguidores", "Coletar 4000x Zeni"],
+    drops: {
+      minions: ["600x Zeni: 40%"],
+      boss: [
+        "3.000x Zeni: 70%",
+        "1x Vegeta Skirt Z: 10%",
+        "1x Box Sayan Family: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 15,
+    name: "Freeza",
+    image: FreezaForm1,
+    story:
+      "Freeza é o principal vilão da saga Namekusei e um dos mais poderosos guerreiros do universo, responsável pela destruição do planeta Vegeta.",
+    quest: ["Vença Freeza em sua primeira forma", "Coletar 5000x Zeni"],
+    drops: {
+      minions: ["720x Zeni: 40%"],
+      boss: [
+        "3.600x Zeni: 70%",
+        "1x Vegeta Bracer Z: 10%",
+        "1x Box Sayan Family: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 16,
+    name: "Freeza",
+    image: FreezaForm2,
+    story:
+      "Freeza é o principal vilão da saga Namekusei e um dos mais poderosos guerreiros do universo, responsável pela destruição do planeta Vegeta.",
+    quest: ["Vença Freeza em sua segunda forma", "Coletar 6000x Zeni"],
+    drops: {
+      minions: ["850x Zeni: 40%"],
+      boss: [
+        "4.250x Zeni: 70%",
+        "1x Vegeta Boots Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 17,
+    name: "Freeza",
+    image: FreezaForm3,
+    story:
+      "Freeza é o principal vilão da saga Namekusei e um dos mais poderosos guerreiros do universo, responsável pela destruição do planeta Vegeta.",
+    quest: ["Vença Freeza em sua terceira forma", "Coletar 7000x Zeni"],
+    drops: {
+      minions: ["1.000x Zeni: 40%"],
+      boss: [
+        "5.000x Zeni: 70%",
+        "1x Vegeta Armor Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 18,
+    name: "Freeza",
+    image: FreezaFinal,
+    story:
+      "Freeza é o principal vilão da saga Namekusei e um dos mais poderosos guerreiros do universo, responsável pela destruição do planeta Vegeta.",
+    quest: ["Derrote Freeza em sua forma final", "Coletar 8000x Zeni"],
+    drops: {
+      minions: ["1.300x Zeni: 40%"],
+      boss: [
+        "1x Piccolo Bracer Z: 10%",
+        "6.500x Zeni: 70%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 19,
+    name: "Garlic Jr.",
+    image: GarlicJr,
+    story:
+      "Garlic Jr. é um vilão da série DBZ que aparece no arco de Garlic Jr. Ele é um imortal e tenta dominar a Terra.",
+    quest: ["Derrote Garlic Jr. e seus planos malignos", "Coletar 9000x Zeni"],
+    drops: {
+      minions: ["1.600x Zeni: 40%"],
+      boss: [
+        "8.000x Zeni: 70%",
+        "1x Box Kame House: 10%",
+        "1x Piccolo Armor Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 20,
+    name: "Coola",
+    image: Coola,
+    story:
+      "Coola é o irmão mais velho de Freeza e aparece no filme 'Dragon Ball Z: O Retorno de Coola'. Ele tenta dominar o universo com seu exército.",
+    quest: ["Derrote Coola e sua frota", "Coletar 10000x Zeni"],
+    drops: {
+      minions: ["1.900x Zeni: 40%"],
+      boss: [
+        "9.500x Zeni: 70%",
+        "1x Piccolo Boots Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 21,
+    name: "Super Coola",
+    image: SuperCoola,
+    story:
+      "Super Coola é a versão mais forte e transformada de Coola, ele aparece no filme 'Coola: O Retorno'.",
+    quest: ["Derrote Super Coola em sua forma máxima", "Coletar 12000x Zeni"],
+    drops: {
+      minions: ["2.500x Zeni: 40%"],
+      boss: [
+        "12.500x Zeni: 70%",
+        "1x Piccolo Pants Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 22,
+    name: "Metal Coola",
+    image: MetalCoola,
+    story:
+      "Metal Coola é a forma cibernética do vilão Coola, que aparece em 'Dragon Ball Z: O Retorno de Coola'.",
+    quest: [
+      "Derrote Metal Coola e sua tecnologia cibernética",
+      "Coletar 15000x Zeni",
+    ],
+    drops: {
+      minions: ["3.000x Zeni: 40%"],
+      boss: [
+        "15.000x Zeni: 70%",
+        "1x Trunks Jacket Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 23,
+    name: "Mecha Freeza",
+    image: MechaFreeza,
+    story:
+      "Mecha Freeza é a versão cibernética de Freeza, após sua destruição nas mãos de Goku, e aparece na saga de Dragon Ball Z.",
+    quest: [
+      "Derrote Mecha Freeza e sua versão cibernética",
+      "Coletar 20000x Zeni",
+    ],
+    drops: {
+      minions: ["4.000x Zeni: 40%"],
+      boss: [
+        "20.000x Zeni: 70%",
+        "1x Trunks Sword Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 24,
+    name: "King Cold",
+    image: KingCold,
+    story:
+      "King Cold é o pai de Freeza e o governante do império galáctico, conhecido por sua imensa força e crueldade.",
+    quest: [
+      "Derrote King Cold e sua liderança galáctica",
+      "Coletar 25000x Zeni",
+    ],
+    drops: {
+      minions: ["5.000x Zeni: 40%"],
+      boss: [
+        "25.000x Zeni: 70%",
+        "1x Box Freeza Army: 10%",
+        "1x Trunks Pants Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 25,
+    name: "Android 19",
+    image: Android19,
+    story:
+      "Android 19 é um dos androides criados pelo Dr. Gero e é um dos principais vilões na saga Android.",
+    quest: ["Derrote Android 19 e seus aliados", "Coletar 32000x Zeni"],
+    drops: {
+      minions: ["6.500x Zeni: 40%"],
+      boss: [
+        "32.500x Zeni: 70%",
+        "1x Trunks Boots Z: 10%",
+        "1x Box Freeza Army: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+];

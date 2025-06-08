@@ -11,11 +11,15 @@ import GuiaQuests from "./pages/GuiaQuests"; // Página Guia de Quests
 import Galeria from "./pages/Galeria"; // Página Galeria
 import Comunidade from "./pages/Comunidade"; // Página Comunidade
 import Banner from "./components/Banner"; // Importa o componente Banner
-
-// Remover a importação do SpeedInsights, pois não é mais necessária
-// Não é necessário importar o pacote aqui, a coleta de métricas será feita automaticamente pelo script no index.html
+import Stage from "./pages/Stage"; // Página Stage
+import CharacterDetail from "./components/CharacterDetail"; // Página de detalhes dos personagens
 
 const App: React.FC = () => {
+  // Função de fechamento do modal
+  const handleCloseModal = () => {
+    console.log("Fechando detalhes do personagem");
+  };
+
   return (
     <Router>
       <GlobalStyle />
@@ -29,6 +33,7 @@ const App: React.FC = () => {
         <Route path="/quests" element={<GuiaQuests />} />
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/comunidade" element={<Comunidade />} />
+        <Route path="/stage" element={<Stage />} />{" "}
       </Routes>
       <Footer />
     </Router>

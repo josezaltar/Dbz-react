@@ -75,6 +75,11 @@ const Header: React.FC = () => {
             </NavLink>
           </NavItem>
           <NavItem>
+            <NavLink as={Link} to="/stage" onClick={handleLinkClick}>
+              Stage
+            </NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink as={Link} to="/quests" onClick={handleLinkClick}>
               Guia de Quests
             </NavLink>

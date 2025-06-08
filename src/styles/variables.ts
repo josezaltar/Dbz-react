@@ -5,7 +5,8 @@ export const Colors = {
   cardBackground: "#333", // Cor de fundo dos cards: **Cinza escuro**
   cardHover: "#444", // Cor de fundo no hover dos cards: **Cinza mais claro que o cardBackground** (ainda escuro, mas um tom diferente)
   black: "#000", // Cor preta: **Preto**
-  red: "#f44336",
+  red: "#FF0000",
+  verde: "#008000",
 };
 
 export const Fonts = {
