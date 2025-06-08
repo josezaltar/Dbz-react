@@ -37,7 +37,7 @@ export const Title = styled.h1`
 `;
 
 export const SubTitle = styled.h2`
-  -webkit-text-stroke: 0.3px #000;
+  -webkit-text-stroke: 0.5px #000;
   font-size: 2rem;
   color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: ${Spacing.medium};

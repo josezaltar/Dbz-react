@@ -51,6 +51,7 @@ export const DownloadItem = styled.div`
   h3 {
     font-size: 4rem;
     color: ${Colors.primary};
+    -webkit-text-stroke: 0.85px #000;
 
     @media (max-width: ${Breakpoints.tablet}) {
       font-size: 2.5rem; /* Ajuste para tablets */

@@ -23,9 +23,11 @@ const Header: React.FC = () => {
   return (
     <Container>
       {/* Ícone de Menu Sanduíche */}
-      <HamburgerIcon onClick={handleToggleMenu}>Menu</HamburgerIcon>
+      <HamburgerIcon onClick={handleToggleMenu} isOpen={isMenuOpen}>
+        Menu
+      </HamburgerIcon>
 
-      {/* Menu (visível somente em dispositivos móveis) */}
+      {/* Menu (visível somente quando isMenuOpen for verdadeiro) */}
       <Menu isOpen={isMenuOpen}>
         <NavList>
           <NavItem>
