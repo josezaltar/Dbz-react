@@ -31,7 +31,7 @@ export const personagensData = [
     image: Raditz,
     story:
       "Raditz é um dos primeiros vilões da série DBZ e o irmão de Goku. Ele é um guerreiro Saiyajin, conhecido por sua brutalidade e pela sua chegada à Terra para conquistar o planeta.",
-    quest: ["Derrote 10 inimigos Saiyajins", "Coletar 100x Zeni"],
+    quest: ["Derrote 10 Saibai", "Derrote Raditz"],
     drops: {
       minions: ["10x Zeni: 40%"],
       boss: [
@@ -48,7 +48,7 @@ export const personagensData = [
     image: Nappa,
     story:
       "Nappa é um dos membros da elite dos Saiyajins e serve como subordinado de Vegeta. Ele é grande e forte, conhecido por sua brutalidade e por ser um dos principais vilões da saga dos Saiyajins.",
-    quest: ["Vença Nappa e prove sua força!", "Coletar 200x Zeni"],
+    quest: ["Derrote 12 Saibaimen", "Derrote Nappa"],
     drops: {
       minions: ["20x Zeni: 40%"],
       boss: [
@@ -65,7 +65,7 @@ export const personagensData = [
     image: Vegeta,
     story:
       "Vegeta é o príncipe dos Saiyajins e um dos personagens mais complexos de DB. Inicialmente um vilão, ele se torna um dos maiores aliados de Goku e de seus amigos.",
-    quest: ["Derrote 20 inimigos Saiyajins", "Colete 300x Zeni"],
+    quest: ["Derrote 15 Saibaiman", "Derrote Vegeta"],
     drops: {
       minions: ["30x Zeni: 40%"],
       boss: [
@@ -82,10 +82,7 @@ export const personagensData = [
     image: OozaruVegeta,
     story:
       "Oozaru Vegeta é a versão gigantesca e furiosa de Vegeta, quando ele se transforma no macaco gigante durante a luta contra Goku na Terra.",
-    quest: [
-      "Derrote Oozaru Vegeta em sua forma gigantesca",
-      "Coletar 500x Zeni",
-    ],
+    quest: ["Derrote 15 Super Saibai", "Derrote Oozaru Vegeta"],
     drops: {
       minions: ["50x Zeni: 40%"],
       boss: [
@@ -101,7 +98,7 @@ export const personagensData = [
     image: Turles,
     story:
       "Turles é um Saiyajin de um universo alternativo e o principal vilão do filme 'O Super Guerreiro'. Ele se assemelha fisicamente a Goku, mas é um vilão impiedoso.",
-    quest: ["Derrote Turles e sua árvore mágica", "Coletar 700x Zeni"],
+    quest: ["Derrote 20 Turles Soldier", "Derrote Turles"],
     drops: {
       minions: ["70x Zeni: 40%"],
       boss: [
@@ -117,7 +114,7 @@ export const personagensData = [
     image: Cui,
     story:
       "Cui é um dos subordinados de Freeza, que serve como comandante do exército de Freeza durante a saga Namekusei. Ele é derrotado por Vegeta.",
-    quest: ["Derrote Cui no campo de batalha", "Coletar 500x Zeni"],
+    quest: ["Derrote 20 Freeza Soldier 1", "Derrote Cui"],
     drops: {
       minions: ["50x Zeni: 40%"],
       boss: [
@@ -133,7 +130,7 @@ export const personagensData = [
     image: Dodoria,
     story:
       "Dodoria é um dos subordinados de Freeza. Ele é um guerreiro forte e cruel que ajuda Freeza durante a invasão de Namekusei.",
-    quest: ["Vença Dodoria e mostre seu poder!", "Coletar 1000x Zeni"],
+    quest: ["Derrote 25 Freeza Soldier 2", "Derrote Dodoria"],
     drops: {
       minions: ["100x Zeni: 40%"],
       boss: [
@@ -149,7 +146,7 @@ export const personagensData = [
     image: Zarbon,
     story:
       "Zarbon é outro subordinado de Freeza e é um guerreiro de grande beleza, mas também de imensa força. Ele tem a habilidade de se transformar em uma forma mais poderosa.",
-    quest: ["Derrote Zarbon em sua forma original", "Coletar 1200x Zeni"],
+    quest: ["Derrote 25 Freeza Soldier 3", "Derrote Zarbon"],
     drops: {
       minions: ["130x Zeni: 40%"],
       boss: [
@@ -165,7 +162,7 @@ export const personagensData = [
     image: Guldo,
     story:
       "Guldo é um dos membros da Força Ginyu e possui a habilidade de parar o tempo por um curto período. Ele é derrotado por Goku.",
-    quest: ["Vença Guldo após ele parar o tempo", "Coletar 1500x Zeni"],
+    quest: ["Derrote 25 Freeza Soldier 4", "Derrote Guldo"],
     drops: {
       minions: ["200x Zeni: 40%"],
       boss: [
@@ -181,7 +178,7 @@ export const personagensData = [
     image: Recome,
     story:
       "Recoome é um dos membros da Força Ginyu e é conhecido por sua força física impressionante. Ele é derrotado por Goku.",
-    quest: ["Derrote Recome em uma batalha épica", "Coletar 2000x Zeni"],
+    quest: ["Derrote 30 Freeza Soldier 5", "Derrote Recoome"],
     drops: {
       minions: ["230x Zeni: 40%"],
       boss: [
@@ -197,10 +194,7 @@ export const personagensData = [
     image: Burter,
     story:
       "Burter é um dos membros da Força Ginyu, e é conhecido por ser o homem mais rápido do universo. Ele é derrotado por Goku.",
-    quest: [
-      "Derrote Burter, o homem mais rápido do universo",
-      "Coletar 2500x Zeni",
-    ],
+    quest: ["Derrote 30 Freeza Soldier 6", "Derrote Burter"],
     drops: {
       minions: ["300x Zeni: 40%"],
       boss: [
@@ -216,7 +210,7 @@ export const personagensData = [
     image: Jeice,
     story:
       "Jeice é um dos membros da Força Ginyu, e tem um ataque poderoso chamado 'Crusher Ball'. Ele é derrotado por Goku.",
-    quest: ["Vença Jeice e sua Crusher Ball", "Coletar 3000x Zeni"],
+    quest: ["Derrote 35 Freeza Soldier 7", "Derrote Jeice"],
     drops: {
       minions: ["380x Zeni: 40%"],
       boss: [
@@ -232,10 +226,7 @@ export const personagensData = [
     image: Ginyu,
     story:
       "Ginyu é o líder da Força Ginyu e tem a habilidade de trocar de corpo com outra pessoa. Ele é derrotado por Goku após uma troca de corpo.",
-    quest: [
-      "Derrote Ginyu e sua habilidade de troca de corpo",
-      "Coletar 3500x Zeni",
-    ],
+    quest: ["Derrote 35 Freeza Soldier 8", "Derrote Ginyu"],
     drops: {
       minions: ["500x Zeni: 40%"],
       boss: [
@@ -251,7 +242,7 @@ export const personagensData = [
     image: LordSlug,
     story:
       "Lord Slug é um vilão do filme 'Dragon Ball Z: O Super Guerreiro', e é um Namekusei que tem o poder de transformar os outros em pedra.",
-    quest: ["Derrote Lord Slug e seus seguidores", "Coletar 4000x Zeni"],
+    quest: ["Derrote 40 Namekian Villian", "Derrote Lord Slug"],
     drops: {
       minions: ["600x Zeni: 40%"],
       boss: [
@@ -268,7 +259,7 @@ export const personagensData = [
     image: FreezaForm1,
     story:
       "Freeza é o principal vilão da saga Namekusei e um dos mais poderosos guerreiros do universo, responsável pela destruição do planeta Vegeta.",
-    quest: ["Vença Freeza em sua primeira forma", "Coletar 5000x Zeni"],
+    quest: ["Derrote 40 Freeza Soldier 9", "Derrote Freeza Forma 1"],
     drops: {
       minions: ["720x Zeni: 40%"],
       boss: [
@@ -285,7 +276,7 @@ export const personagensData = [
     image: FreezaForm2,
     story:
       "Freeza é o principal vilão da saga Namekusei e um dos mais poderosos guerreiros do universo, responsável pela destruição do planeta Vegeta.",
-    quest: ["Vença Freeza em sua segunda forma", "Coletar 6000x Zeni"],
+    quest: ["Derrote 40 Freeza Soldier 10", "Derrote Freeza Forma 2"],
     drops: {
       minions: ["850x Zeni: 40%"],
       boss: [
@@ -301,7 +292,7 @@ export const personagensData = [
     image: FreezaForm3,
     story:
       "Freeza é o principal vilão da saga Namekusei e um dos mais poderosos guerreiros do universo, responsável pela destruição do planeta Vegeta.",
-    quest: ["Vença Freeza em sua terceira forma", "Coletar 7000x Zeni"],
+    quest: ["Derrote 40 Freeza Soldier 11", "Derrote Freeza Forma 3"],
     drops: {
       minions: ["1.000x Zeni: 40%"],
       boss: [
@@ -317,7 +308,7 @@ export const personagensData = [
     image: FreezaFinal,
     story:
       "Freeza é o principal vilão da saga Namekusei e um dos mais poderosos guerreiros do universo, responsável pela destruição do planeta Vegeta.",
-    quest: ["Derrote Freeza em sua forma final", "Coletar 8000x Zeni"],
+    quest: ["Derrote 45 Freeza Soldier 12", "Derrote Freeza Final"],
     drops: {
       minions: ["1.300x Zeni: 40%"],
       boss: [
@@ -333,7 +324,7 @@ export const personagensData = [
     image: GarlicJr,
     story:
       "Garlic Jr. é um vilão da série DBZ que aparece no arco de Garlic Jr. Ele é um imortal e tenta dominar a Terra.",
-    quest: ["Derrote Garlic Jr. e seus planos malignos", "Coletar 9000x Zeni"],
+    quest: ["Derrote 50 Tien Clone", "Derrote Garlic Jr."],
     drops: {
       minions: ["1.600x Zeni: 40%"],
       boss: [
@@ -350,7 +341,7 @@ export const personagensData = [
     image: Coola,
     story:
       "Coola é o irmão mais velho de Freeza e aparece no filme 'Dragon Ball Z: O Retorno de Coola'. Ele tenta dominar o universo com seu exército.",
-    quest: ["Derrote Coola e sua frota", "Coletar 10000x Zeni"],
+    quest: ["Derrote 50 Coola Soldier 1", "Derrote Coola"],
     drops: {
       minions: ["1.900x Zeni: 40%"],
       boss: [
@@ -366,7 +357,7 @@ export const personagensData = [
     image: SuperCoola,
     story:
       "Super Coola é a versão mais forte e transformada de Coola, ele aparece no filme 'Coola: O Retorno'.",
-    quest: ["Derrote Super Coola em sua forma máxima", "Coletar 12000x Zeni"],
+    quest: ["Derrote 50 Coola Robot", "Derrote Super Coola"],
     drops: {
       minions: ["2.500x Zeni: 40%"],
       boss: [
@@ -382,10 +373,7 @@ export const personagensData = [
     image: MetalCoola,
     story:
       "Metal Coola é a forma cibernética do vilão Coola, que aparece em 'Dragon Ball Z: O Retorno de Coola'.",
-    quest: [
-      "Derrote Metal Coola e sua tecnologia cibernética",
-      "Coletar 15000x Zeni",
-    ],
+    quest: ["Derrote 25 Freeza Soldier 2", "Derrote Metal Coola"],
     drops: {
       minions: ["3.000x Zeni: 40%"],
       boss: [
@@ -401,10 +389,7 @@ export const personagensData = [
     image: MechaFreeza,
     story:
       "Mecha Freeza é a versão cibernética de Freeza, após sua destruição nas mãos de Goku, e aparece na saga de Dragon Ball Z.",
-    quest: [
-      "Derrote Mecha Freeza e sua versão cibernética",
-      "Coletar 20000x Zeni",
-    ],
+    quest: ["Derrote 50 Freeza Soldier 13", "Derrote Mecha Freeza"],
     drops: {
       minions: ["4.000x Zeni: 40%"],
       boss: [
@@ -420,10 +405,7 @@ export const personagensData = [
     image: KingCold,
     story:
       "King Cold é o pai de Freeza e o governante do império galáctico, conhecido por sua imensa força e crueldade.",
-    quest: [
-      "Derrote King Cold e sua liderança galáctica",
-      "Coletar 25000x Zeni",
-    ],
+    quest: ["Derrote 50 Freeza Soldier 14", "Derrote King Cold"],
     drops: {
       minions: ["5.000x Zeni: 40%"],
       boss: [
@@ -440,7 +422,7 @@ export const personagensData = [
     image: Android19,
     story:
       "Android 19 é um dos androides criados pelo Dr. Gero e é um dos principais vilões na saga Android.",
-    quest: ["Derrote Android 19 e seus aliados", "Coletar 32000x Zeni"],
+    quest: ["Derrote 60 Android 8", "Derrote Android 19"],
     drops: {
       minions: ["6.500x Zeni: 40%"],
       boss: [
