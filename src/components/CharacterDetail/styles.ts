@@ -50,11 +50,13 @@ export const Container = styled.div`
   ul {
     list-style-type: none; /* Remove os pontos */
     padding-left: 0; /* Remove o espaçamento à esquerda */
-    font-size: 12px;
+    font-size: 11px;
+    text-align: left; /* Assegura que o texto dentro da lista fique alinhado à esquerda */
   }
 
   li {
     color: ${Colors.secondary};
+    text-align: left; /* Alinha o texto dos itens da lista à esquerda */
   }
 
   h2 {
