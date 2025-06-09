@@ -29,7 +29,7 @@ const CharacterDetail: React.FC<CharacterDetailProps> = ({
           <h3>Drops e Quest</h3>
           <div className="info-section">
             <div className="info-column">
-              <h3>Quest</h3>
+              <h4>Quest</h4>
               <ul>
                 {personagem.quest.map((item, index) => (
                   <li key={index}>{item}</li>
@@ -38,7 +38,7 @@ const CharacterDetail: React.FC<CharacterDetailProps> = ({
             </div>
 
             <div className="info-column">
-              <h3>Minions</h3>
+              <h4>Minions</h4>
               <ul>
                 {personagem.drops.minions.map((item, index) => (
                   <li key={index}>{item}</li>
@@ -47,7 +47,7 @@ const CharacterDetail: React.FC<CharacterDetailProps> = ({
             </div>
 
             <div className="info-column">
-              <h3>Boss</h3>
+              <h4>Boss</h4>
               <ul>
                 {personagem.drops.boss.map((item, index) => (
                   <li key={index}>{item}</li>

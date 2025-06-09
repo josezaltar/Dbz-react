@@ -1,4 +1,3 @@
-// src/styles/comunidade/styles.ts
 import styled from "styled-components";
 import {
   Colors,
@@ -6,67 +5,77 @@ import {
   Breakpoints,
   Fonts,
   Shadows,
-} from "../../styles/variables"; // Importando as variáveis
+} from "../../styles/variables";
+
+// Estilos Comuns
+const textAlignCenter = `
+  text-align: center;
+`;
+
+const fontSize = {
+  title: "3rem",
+  subtitle: "2rem",
+  text: "1.25rem",
+  listItem: "1.1rem",
+};
 
 export const Container = styled.section`
-  padding: ${Spacing.large} ${Spacing.small};
-  text-align: center;
-  background-color: ${Colors.background}; /* Usando a cor de fundo definida em variables.ts */
-  color: ${Colors.secondary}; /* Usando a cor de texto definida em variables.ts */
+  padding: ${Spacing.small} ${Spacing.small};
+  background-color: ${Colors.background};
+  color: ${Colors.text};
   border-radius: 10px;
   max-width: 95%;
   margin: ${Spacing.large} auto;
   overflow: hidden;
-  box-shadow: ${Shadows.heavy}; /* Sombras mais suaves */
+  box-shadow: ${Shadows.heavy};
+  ${textAlignCenter};
 
   /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
+  @media (max-width: ${Breakpoints.md}) {
     padding: ${Spacing.medium} ${Spacing.small};
   }
 `;
 
 export const Title = styled.h1`
-  font-size: 3rem;
-  color: ${Colors.primary}; /* Cor do texto */
-  margin-bottom: ${Spacing.xLarge};
-  text-align: center;
+  font-size: 5rem;
+  color: ${Colors.primary};
+  margin-bottom: ${Spacing.small};
   font-weight: bold;
-  font-family: ${Fonts.heading}; /* Usando a fonte personalizada */
-
-  /* Adicionando o contorno */
-  -webkit-text-stroke: 0.8px #000; /* Defina a espessura e a cor do contorno */
+  font-family: ${Fonts.heading};
+  -webkit-text-stroke: 0.8px #000;
+  ${textAlignCenter};
 
   /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
-    font-size: 2.5rem; /* Ajusta o tamanho da fonte para dispositivos menores */
+  @media (max-width: ${Breakpoints.md}) {
+    font-size: 2.5rem;
   }
 
-  @media (max-width: ${Breakpoints.mobile}) {
-    font-size: 2rem; /* Ajusta o tamanho da fonte para dispositivos móveis */
+  @media (max-width: ${Breakpoints.sm}) {
+    font-size: 2rem;
   }
 `;
 
 export const SubTitle = styled.h2`
-  font-size: 2rem;
-  color: ${Colors.primary}; /* Cor do subtítulo definida em variables.ts */
-  margin-bottom: ${Spacing.medium};
-  text-align: center;
+  font-size: 2.5rem;
+  color: ${Colors.primary};
+  margin-bottom: ${Spacing.xsmall};
   -webkit-text-stroke: 0.8px #000;
+  ${textAlignCenter};
 `;
 
 export const Text = styled.p`
-  font-size: 1.25rem;
+  font-size: ${fontSize.text};
   margin-top: ${Spacing.small};
-  color: ${Colors.secondary};
-  text-align: center;
-  margin-bottom: ${Spacing.xLarge};
+  margin-bottom: ${Spacing.medium};
+  color: ${Colors.text};
+  ${textAlignCenter};
 
   strong {
-    color: ${Colors.primary}; /* Cor para o texto em negrito */
+    color: ${Colors.primary};
   }
 
   /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
+  @media (max-width: ${Breakpoints.md}) {
     font-size: 1.1rem;
   }
 `;
@@ -75,24 +84,24 @@ export const List = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: ${Spacing.small} ${Spacing.medium};
-  text-align: center;
+  ${textAlignCenter};
 
   li {
-    font-size: 1.1rem;
+    font-size: ${fontSize.listItem};
     margin-bottom: ${Spacing.small};
-    color: ${Colors.secondary};
+    color: ${Colors.text};
 
     strong {
-      color: ${Colors.primary}; /* Cor para o texto em negrito */
+      color: ${Colors.primary};
     }
 
     a {
-      color: ${Colors.secondary};
+      color: ${Colors.text};
       text-decoration: none;
       display: flex;
       align-items: center;
-      justify-content: center; /* Garante que o ícone e o texto fiquem alinhados */
-      gap: 10px; /* Adiciona espaço entre o ícone e o texto */
+      justify-content: center;
+      gap: 10px;
     }
 
     img {

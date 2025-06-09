@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, PersonagemContainer, CardWrapper } from "./styles";
+import { Card, PersonagemContainer, CardWrapper } from "../styles";
 
 import Goku from "../../../assets/images/personagens/Comum/Goku.jpg";
 import Piccolo from "../../../assets/images/personagens/Comum/piccolo.png";

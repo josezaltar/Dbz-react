@@ -1,41 +1,36 @@
-// src/pages/Tutorial/styles.ts
 import styled from "styled-components";
 import { Colors, Spacing, Breakpoints, Shadows } from "../../styles/variables"; // Importando as variáveis
 
-// Container para o conteúdo da página
+const fontSize = {
+  title: "5rem",
+  subtitle: "2.3rem",
+  paragraph: "1.25rem",
+};
+
+const padding = `${Spacing.xsmall} ${Spacing.medium}`;
+
 export const Container = styled.section`
-  padding: ${Spacing.xLarge} ${Spacing.medium};
+  padding: ${padding};
   text-align: center;
-  background-color: ${Colors.background}; /* Usando a cor de fundo definida em variables.ts */
-  color: ${Colors.secondary}; /* Usando a cor de texto definida em variables.ts */
+  background-color: ${Colors.background};
+  color: ${Colors.text};
   border-radius: 10px;
   max-width: 95%;
   margin: ${Spacing.large} auto;
   overflow: hidden;
-  box-shadow: ${Shadows.medium}; /* Usando sombra média definida em variables.ts */
+  box-shadow: ${Shadows.medium};
 
-  /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
-    flex-direction: column;
+  @media (max-width: ${Breakpoints.md}) {
     padding: ${Spacing.large} ${Spacing.small};
   }
 `;
 
 export const Title = styled.h1`
-  font-size: 3rem;
-  color: ${Colors.verde}; /* Usando a cor primária definida em variables.ts */
-  margin-bottom: ${Spacing.xLarge};
-  text-align: center; /* Centraliza o título */
+  font-size: clamp(2rem, 5vw, ${fontSize.title});
+  color: ${Colors.primary};
+  margin-bottom: ${Spacing.small};
+  text-align: center;
   -webkit-text-stroke: 0.8px #000;
-
-  /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
-    font-size: 2.5rem;
-  }
-
-  @media (max-width: ${Breakpoints.mobile}) {
-    font-size: 2rem;
-  }
 `;
 
 export const Content = styled.div`
@@ -43,21 +38,26 @@ export const Content = styled.div`
   padding: ${Spacing.medium};
   background-color: #2c3e50;
   border-radius: 10px;
-  color: ${Colors.secondary};
-  width: 70%; /* Ajuste o tamanho do conteúdo principal */
+  color: ${Colors.text};
+  width: 70%;
   box-shadow: ${Shadows.medium};
+  margin: auto;
+
+  @media (max-width: ${Breakpoints.md}) {
+    width: 90%;
+  }
 `;
 
 export const ContentTitle = styled.h2`
-  font-size: 2rem;
-  color: ${Colors.verde}; /* Usando a cor primária definida em variables.ts */
+  font-size: ${fontSize.subtitle};
+  color: ${Colors.primary};
   margin-bottom: ${Spacing.medium};
   -webkit-text-stroke: 0.3px #000;
 `;
 
 export const ContentText = styled.p`
-  font-size: 1.25rem;
-  color: ${Colors.secondary};
+  font-size: ${fontSize.paragraph};
+  color: ${Colors.text};
   text-align: center;
   line-height: 1.8;
 `;
@@ -66,19 +66,19 @@ export const List = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: ${Colors.background}; /* Alterado para combinar com o fundo */
+  background-color: ${Colors.background};
   border-radius: 10px;
   width: 100%;
-  box-shadow: ${Shadows.medium};
+  box-shadow: ${Shadows.heavy};
+  border: 4px solid ${Colors.primary};
 `;
 
 export const ListItem = styled.li<{ selected: boolean }>`
   padding: ${Spacing.small} ${Spacing.medium};
-  color: ${Colors.secondary};
+  color: ${Colors.text};
   cursor: pointer;
-  border-radius: 10px;
   background-color: ${(props) =>
-    props.selected ? `${Colors.verde}` : "transparent"};
+    props.selected ? Colors.primary : "transparent"};
 
   &:hover {
     background-color: ${Colors.cardHover};

@@ -20,9 +20,9 @@ export const GlobalStyle = createGlobalStyle`
 
   /* Estilos globais para o body */
   body {
-    font-family: ${Fonts.primary}; /* Usando a fonte principal para o corpo */
+    font-family: ${Fonts.body}; /* Usando a fonte principal para o corpo */
     background-color: ${Colors.background};
-    color: ${Colors.secondary};
+    color: ${Colors.text};
     line-height: 1.6;
   }
 

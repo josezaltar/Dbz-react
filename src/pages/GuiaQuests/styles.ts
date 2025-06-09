@@ -1,79 +1,104 @@
-// src/pages/GuiaQuest/styles.ts
 import styled from "styled-components";
 import { Colors, Spacing, Breakpoints, Shadows } from "../../styles/variables"; // Importando as variáveis
 
-export const Container = styled.section`
-  padding: ${Spacing.large} ${Spacing.small};
+// Estilos Comuns
+const textAlignCenter = `
   text-align: center;
-  background-color: ${Colors.background}; /* Usando a cor de fundo definida em variables.ts */
-  color: ${Colors.secondary}; /* Usando a cor de texto definida em variables.ts */
+`;
+
+const fontSize = {
+  title: "5rem",
+  subtitle: "3.5rem",
+  paragraph: "1.1rem",
+};
+
+const padding = `${Spacing.large} ${Spacing.small}`;
+
+export const Container = styled.section`
+  padding: ${padding};
+  background-color: ${Colors.background};
+  color: ${Colors.text};
   border-radius: 10px;
   max-width: 95%;
   margin: ${Spacing.large} auto;
   overflow: hidden;
-  box-shadow: ${Shadows.medium}; /* Usando sombra média definida em variables.ts */
+  box-shadow: ${Shadows.medium};
+  ${textAlignCenter};
 
-  /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
+  @media (max-width: ${Breakpoints.md}) {
     padding: ${Spacing.medium} ${Spacing.small};
   }
 `;
 
 export const Title = styled.h1`
-  font-size: 3rem;
-  color: ${Colors.verde}; /* Usando a cor primária definida em variables.ts */
-  margin-bottom: ${Spacing.large};
-  text-align: center;
+  font-size: clamp(2.5rem, 8vw, ${fontSize.title});
+  color: ${Colors.primary};
+  margin-bottom: ${Spacing.small};
   -webkit-text-stroke: 0.8px #000;
+  ${textAlignCenter};
 
-  /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
-    font-size: 2.5rem;
+  @media (max-width: ${Breakpoints.md}) {
+    font-size: 3rem;
   }
 
-  @media (max-width: ${Breakpoints.mobile}) {
-    font-size: 2rem;
+  @media (max-width: ${Breakpoints.sm}) {
+    font-size: 2.5rem;
   }
 `;
 
 export const SubTitle = styled.h2`
-  -webkit-text-stroke: 0.3px #000;
-  font-size: 2rem;
-  color: ${Colors.verde}; /* Usando a cor primária definida em variables.ts */
+  font-size: ${fontSize.subtitle};
+  color: ${Colors.primary};
   margin-bottom: ${Spacing.medium};
-  text-align: center;
+  -webkit-text-stroke: 0.3px #000;
+  ${textAlignCenter};
+
+  @media (max-width: ${Breakpoints.md}) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: ${Breakpoints.sm}) {
+    font-size: 2rem;
+  }
 `;
 
 export const Text = styled.p`
-  font-size: 1.25rem;
+  font-size: ${fontSize.paragraph};
   margin-top: ${Spacing.small};
-  color: ${Colors.secondary}; /* Usando a cor de texto definida em variables.ts */
+  color: ${Colors.text};
   text-align: center;
-  margin-bottom: ${Spacing.xLarge};
+  margin-bottom: ${Spacing.small};
 
   strong {
-    color: ${Colors.primary}; /* Destaca palavras fortes em laranja */
+    color: ${Colors.primary};
   }
 
-  /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
+  @media (max-width: ${Breakpoints.md}) {
     font-size: 1.1rem;
+  }
+
+  @media (max-width: ${Breakpoints.sm}) {
+    font-size: 1rem;
   }
 `;
 
 export const List = styled.ul`
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: ${Spacing.small} 25%;
   text-align: left;
 
   li {
-    font-size: 1.1rem;
+    font-size: ${fontSize.paragraph};
     margin-bottom: ${Spacing.small};
-    color: ${Colors.secondary};
+    color: ${Colors.text};
 
     strong {
-      color: ${Colors.primary}; /* Destaca palavras fortes em laranja */
+      color: ${Colors.primary};
     }
+  }
+
+  @media (max-width: ${Breakpoints.md}) {
+    margin: ${Spacing.small};
   }
 `;

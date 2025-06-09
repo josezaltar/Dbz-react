@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, PersonagemContainer, CardWrapper } from "./styles";
+import { Card, PersonagemContainer, CardWrapper } from "../styles";
 
 // Importando as imagens dos personagens épicos
 import Broly from "../../../assets/images/personagens/Epicos/Broly.jpeg";

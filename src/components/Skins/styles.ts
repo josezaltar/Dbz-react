@@ -1,57 +1,56 @@
 import styled from "styled-components";
-import { Colors, Spacing } from "../../../styles/variables"; // Importando as variáveis
+import { Colors, Spacing, Breakpoints } from "../../styles/variables";
 
 export const PersonagemContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
-  background-color: ${Colors.background}; /* Fundo com a cor definida */
-  margin-bottom: ${Spacing.large}; /* Ajuste da margem inferior */
+  background-color: ${Colors.background};
+  margin-bottom: ${Spacing.large};
 `;
 
+// CardWrapper: Componente para organizar cards responsivos
 export const CardWrapper = styled.div`
-  /* Configuração do grid para os cards */
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cards por linha */
-  gap: ${Spacing.medium}; /* Espaçamento entre os cards */
+  grid-template-columns: repeat(4, 1fr);
+  gap: ${Spacing.medium};
   margin-top: ${Spacing.small};
   width: 100%;
   padding: ${Spacing.medium};
 
-  /* Responsividade */
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(4, 1fr); /* 4 cards por linha */
+  @media (max-width: ${Breakpoints.lg}) {
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(3, 1fr); /* 3 cards por linha */
+  @media (max-width: ${Breakpoints.md}) {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (max-width: 600px) {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards por linha */
+  @media (max-width: ${Breakpoints.sm}) {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (max-width: 400px) {
-    grid-template-columns: 1fr; /* 1 card por linha */
+    grid-template-columns: 1fr;
   }
 
-  /* Centraliza o último item na última linha */
   &:last-child {
-    grid-column: span 4; /* Faz o último item ocupar toda a largura disponível */
-    justify-self: center; /* Centraliza o item */
+    grid-column: span 4;
+    justify-self: center;
   }
 `;
 
+// Card: Componente para o conteúdo do card
 export const Card = styled.div`
   background-color: ${Colors.cardHover};
-  color: ${Colors.secondary};
+  color: ${Colors.text};
   border-radius: 12px;
   padding: ${Spacing.medium};
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: all 0.3s ease-in-out;
-  min-height: 420px; /* Ajustando para uma altura mínima consistente */
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,7 +64,7 @@ export const Card = styled.div`
   }
 
   h3 {
-    color: ${Colors.verde};
+    color: ${Colors.primary};
     font-size: 2.2rem;
     margin-bottom: 0;
     font-weight: bold;
@@ -80,7 +79,7 @@ export const Card = styled.div`
   }
 
   h4 {
-    color: ${Colors.verde};
+    color: ${Colors.primary};
     font-size: 2rem;
     margin-top: ${Spacing.medium};
     margin-bottom: ${Spacing.small};
@@ -90,7 +89,7 @@ export const Card = styled.div`
 
   p {
     font-size: 1rem;
-    color: ${Colors.secondary};
+    color: ${Colors.text};
     margin-top: ${Spacing.small};
   }
 

@@ -1,5 +1,15 @@
 import styled from "styled-components";
-import { Colors, Shadows } from "../../styles/variables"; // Adapte a variável conforme seu estilo
+import { Colors, Shadows, Spacing } from "../../styles/variables";
+
+const textAlignLeft = `
+  text-align: left;
+`;
+
+const headingStyle = `
+  font-weight: 600;
+  -webkit-text-stroke: 0.5px ${Colors.black};
+  margin-bottom: 0;
+`;
 
 export const Overlay = styled.div`
   position: fixed;
@@ -12,75 +22,77 @@ export const Overlay = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  text-align: left; /* Assegura que o texto dentro da lista fique alinhado à esquerda */
+  ${textAlignLeft}
 `;
 
 export const Container = styled.div`
-  background-color: ${Colors.background};
+  background-color: ${Colors.cardBackground};
   display: flex;
   flex-direction: row;
   max-width: 960px;
-  width: 80%; /* Ajustando a largura para que o conteúdo fique mais equilibrado */
+  width: 80%;
   border-radius: 8px;
-  padding: 16px;
+  padding: ${Spacing.medium};
   position: relative;
-  color: ${Colors.verde};
+  color: ${Colors.primary};
   box-shadow: ${Shadows.heavy};
-  height: auto; /* Ajuste para altura variável */
-  max-height: 85%; /* Limita a altura do container */
+  height: auto;
+  max-height: 85%;
   margin-bottom: 0;
 
   img {
-    width: 300px; /* Largura fixada para que a imagem não ocupe muito espaço */
-    height: 280px; /* Altura fixada, para que a imagem não distorça */
+    width: 280px;
+    height: 330px;
     border-radius: 8px;
-    object-fit: cover; /* As imagens manterão a proporção */
-    margin-right: 24px;
+    object-fit: cover;
+    margin-right: ${Spacing.medium};
   }
 
   .info-section {
-    display: flex; /* Organiza as seções lado a lado */
+    display: flex;
     justify-content: space-between;
     width: 100%;
   }
 
   .info-column {
-    width: 30%; /* Define a largura de cada coluna */
+    width: 30%;
   }
 
   ul {
-    list-style-type: none; /* Remove os pontos */
-    padding-left: 0; /* Remove o espaçamento à esquerda */
+    list-style-type: none;
+    padding-left: 0;
     font-size: 11px;
-    text-align: left; /* Assegura que o texto dentro da lista fique alinhado à esquerda */
+    ${textAlignLeft}
   }
 
   li {
-    color: ${Colors.secondary};
-    text-align: left; /* Alinha o texto dos itens da lista à esquerda */
+    color: ${Colors.text};
+    ${textAlignLeft}
+  }
+
+  h2,
+  h3,
+  h4 {
+    ${headingStyle}
   }
 
   h2 {
-    padding-top: 0;
-    margin-top: 0;
-    font-size: 38px; /* Ajuste da fonte para ficar mais equilibrado */
-    margin-bottom: 0;
-    font-weight: 600;
-    -webkit-text-stroke: 0.5px #000;
+    font-size: 50px;
   }
 
   h3 {
-    font-size: 1.7rem; /* Reduzindo a fonte para que fique proporcional */
-    font-weight: 600;
-    -webkit-text-stroke: 0.5px #000;
-    margin-bottom: 0;
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 30px;
   }
 
   p {
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 0;
     line-height: 1.4;
-    color: ${Colors.secondary};
+    color: ${Colors.text};
     font-weight: 400;
   }
 
@@ -89,17 +101,19 @@ export const Container = styled.div`
     color: ${Colors.primary};
   }
 
-  /* Responsividade para telas menores */
   @media (max-width: 1024px) {
-    width: 90%; /* Ajusta a largura para tablets */
+    width: 90%;
     img {
-      width: 100%; /* Ajusta a largura da imagem para dispositivos móveis */
+      width: 100%;
       height: 230px;
     }
     h2 {
-      font-size: 2.5rem; /* Ajuste do tamanho da fonte */
+      font-size: 2.5rem;
     }
     h3 {
+      font-size: 2rem;
+    }
+    h4 {
       font-size: 1.5rem;
     }
   }
@@ -107,48 +121,46 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
-    width: 95%; /* Ajusta a largura para dispositivos móveis */
-    padding: 12px; /* Ajusta o padding */
-
+    width: 95%;
+    padding: ${Spacing.small};
     img {
       margin-right: 0;
       margin-bottom: 16px;
-      width: 100%; /* Ajusta a largura da imagem para dispositivos móveis */
+      width: 100%;
       height: 180px;
     }
-
     h2 {
-      font-size: 1.8rem; /* Ajusta o tamanho da fonte para telas pequenas */
+      font-size: 2.2rem;
     }
-
     h3 {
-      font-size: 1.3rem; /* Ajusta o tamanho da fonte para telas pequenas */
+      font-size: 1.8rem;
     }
-
+    h4 {
+      font-size: 1.5rem;
+    }
     p {
-      font-size: 14px; /* Ajuste no tamanho da fonte para dispositivos móveis */
+      font-size: 14px;
     }
   }
 
   @media (max-width: 480px) {
-    width: 100%; /* Para telas menores, ajusta para 100% de largura */
-    padding: 10px; /* Ajuste de padding para telas muito pequenas */
-
+    width: 100%;
+    padding: ${Spacing.xsmall};
     img {
-      width: 100%; /* Ajusta a largura da imagem para dispositivos móveis */
+      width: 100%;
       height: 160px;
     }
-
     h2 {
-      font-size: 1.5rem; /* Ajusta o tamanho da fonte para telas muito pequenas */
+      font-size: 1.8rem;
     }
-
     h3 {
-      font-size: 1.2rem; /* Ajusta o tamanho da fonte para telas muito pequenas */
+      font-size: 1.5rem;
     }
-
+    h4 {
+      font-size: 1.2rem;
+    }
     p {
-      font-size: 12px; /* Ajuste no tamanho da fonte para dispositivos móveis muito pequenos */
+      font-size: 12px;
     }
   }
 `;

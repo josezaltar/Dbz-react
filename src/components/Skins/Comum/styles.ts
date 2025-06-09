@@ -45,7 +45,7 @@ export const CardWrapper = styled.div`
 
 export const Card = styled.div`
   background-color: ${Colors.cardHover};
-  color: ${Colors.secondary};
+  color: ${Colors.text};
   border-radius: 12px;
   padding: ${Spacing.medium};
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
@@ -65,7 +65,7 @@ export const Card = styled.div`
   }
 
   h3 {
-    color: ${Colors.verde};
+    color: ${Colors.primary};
     font-size: 2.2rem;
     margin-bottom: 0;
     font-weight: bold;
@@ -80,7 +80,7 @@ export const Card = styled.div`
   }
 
   h4 {
-    color: ${Colors.verde};
+    color: ${Colors.primary};
     font-size: 2rem;
     margin-top: ${Spacing.medium};
     margin-bottom: ${Spacing.small};
@@ -90,7 +90,7 @@ export const Card = styled.div`
 
   p {
     font-size: 1rem;
-    color: ${Colors.secondary};
+    color: ${Colors.text};
     margin-top: ${Spacing.small};
   }
 

@@ -2,18 +2,17 @@ import styled from "styled-components";
 import { Breakpoints, Colors, Shadows, Spacing } from "../../styles/variables";
 
 export const Container = styled.section`
-  padding: ${Spacing.xLarge} ${Spacing.medium};
+  padding: ${Spacing.xsmall} ${Spacing.medium};
   text-align: center;
   background-color: ${Colors.background}; /* Usando a cor de fundo definida em variables.ts */
-  color: ${Colors.secondary}; /* Usando a cor de texto definida em variables.ts */
+  color: ${Colors.text}; /* Usando a cor de texto definida em variables.ts */
   border-radius: 10px;
   max-width: 95%;
   margin: ${Spacing.large} auto;
   overflow: hidden;
   box-shadow: ${Shadows.heavy};
-
   /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
+  @media (max-width: ${Breakpoints.md}) {
     padding: ${Spacing.large} ${Spacing.small};
   }
 `;
@@ -25,11 +24,11 @@ export const StageContainer = styled.div`
   margin-top: 10px;
 
   /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas em tablets */
+  @media (max-width: ${Breakpoints.md}) {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas em mds */
   }
 
-  @media (max-width: ${Breakpoints.mobile}) {
+  @media (max-width: ${Breakpoints.sm}) {
     grid-template-columns: repeat(
       2,
       1fr
@@ -39,18 +38,18 @@ export const StageContainer = styled.div`
 
 export const Title = styled.h1`
   font-size: 5rem;
-  color: ${Colors.verde}; /* Usando a cor primária definida em variables.ts */
+  color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: ${Spacing.xsmall};
   text-align: center;
   -webkit-text-stroke: 0.8px #000;
 
   /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
+  @media (max-width: ${Breakpoints.md}) {
     font-size: 2.5rem;
     margin-bottom: ${Spacing.medium}; /* Ajustando a margem */
   }
 
-  @media (max-width: ${Breakpoints.mobile}) {
+  @media (max-width: ${Breakpoints.sm}) {
     font-size: 2rem;
     margin-bottom: ${Spacing.small}; /* Ajustando a margem */
   }
@@ -78,7 +77,7 @@ export const CharacterCard = styled.div`
   }
 
   h3 {
-    color: ${Colors.verde};
+    color: ${Colors.primary};
     font-size: 2.2rem;
     margin-top: ${Spacing.medium};
     margin-bottom: ${Spacing.small};

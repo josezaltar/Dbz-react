@@ -246,7 +246,7 @@ export const personagensData = [
     name: "Lord Slug",
     image: LordSlug,
     story:
-      "Lord Slug é um vilão do filme 'Dragon Ball Z: O Super Guerreiro', e é um Namekusei que tem o poder de transformar os outros em pedra.",
+      "Lord Slug é um vilão do filme 'DBZ: O Super Guerreiro', e é um Namekusei que tem o poder de transformar os outros em pedra.",
     quest: ["Derrote 40 Namekian Villian", "Derrote Lord Slug"],
     drops: {
       minions: ["600x Zeni: 40%"],
@@ -345,7 +345,7 @@ export const personagensData = [
     name: "Coola",
     image: Coola,
     story:
-      "Coola é o irmão mais velho de Freeza e aparece no filme 'Dragon Ball Z: O Retorno de Coola'. Ele tenta dominar o universo com seu exército.",
+      "Coola é o irmão mais velho de Freeza e aparece no filme 'DBZ: O Retorno de Coola'. Ele tenta dominar o universo com seu exército.",
     quest: ["Derrote 50 Coola Soldier 1", "Derrote Coola"],
     drops: {
       minions: ["1.900x Zeni: 40%"],
@@ -377,7 +377,7 @@ export const personagensData = [
     name: "Metal Coola",
     image: MetalCoola,
     story:
-      "Metal Coola é a forma cibernética do vilão Coola, que aparece em 'Dragon Ball Z: O Retorno de Coola'.",
+      "Metal Coola é a forma cibernética do vilão Coola, que aparece em 'DBZ: O Retorno de Coola'.",
     quest: ["Derrote 25 Freeza Soldier 2", "Derrote Metal Coola"],
     drops: {
       minions: ["3.000x Zeni: 40%"],
@@ -393,7 +393,7 @@ export const personagensData = [
     name: "Mecha Freeza",
     image: MechaFreeza,
     story:
-      "Mecha Freeza é a versão cibernética de Freeza, após sua destruição nas mãos de Goku, e aparece na saga de Dragon Ball Z.",
+      "Mecha Freeza é a versão cibernética de Freeza, após sua destruição nas mãos de Goku, e aparece na saga de DBZ.",
     quest: ["Derrote 50 Freeza Soldier 13", "Derrote Mecha Freeza"],
     drops: {
       minions: ["4.000x Zeni: 40%"],

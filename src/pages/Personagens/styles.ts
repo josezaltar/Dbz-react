@@ -3,10 +3,10 @@ import { Colors, Spacing, Breakpoints, Shadows } from "../../styles/variables"; 
 
 // Container geral para centralizar o conteúdo
 export const Container = styled.section`
-  padding: ${Spacing.xLarge} ${Spacing.medium};
+  padding: ${Spacing.xsmall} ${Spacing.medium};
   text-align: center;
   background-color: ${Colors.background}; /* Usando a cor de fundo definida em variables.ts */
-  color: ${Colors.secondary}; /* Usando a cor de texto definida em variables.ts */
+  color: ${Colors.text}; /* Usando a cor de texto definida em variables.ts */
   border-radius: 10px;
   max-width: 95%;
   margin: ${Spacing.large} auto;
@@ -14,39 +14,37 @@ export const Container = styled.section`
   box-shadow: ${Shadows.heavy};
 
   /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
-    padding: ${Spacing.large} ${Spacing.small};
+  @media (max-width: ${Breakpoints.md}) {
+    padding: ${Spacing.xsmall} ${Spacing.small};
   }
 `;
 
 export const Title = styled.h1`
   font-size: 5rem;
-  color: ${Colors.verde}; /* Usando a cor primária definida em variables.ts */
-  margin-bottom: ${Spacing.xLarge};
+  color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
   text-align: center;
   -webkit-text-stroke: 0.8px #000;
 
   /* Responsividade */
-  @media (max-width: ${Breakpoints.tablet}) {
+  @media (max-width: ${Breakpoints.md}) {
     font-size: 2.5rem;
     margin-bottom: ${Spacing.medium}; /* Ajustando a margem */
   }
 
-  @media (max-width: ${Breakpoints.mobile}) {
+  @media (max-width: ${Breakpoints.sm}) {
     font-size: 2rem;
     margin-bottom: ${Spacing.small}; /* Ajustando a margem */
   }
 `;
 
 export const Section = styled.section`
-  margin-bottom: ${Spacing.large}; /* Adicionando espaço entre as seções */
-  padding: ${Spacing.small} 0;
-
-  border-bottom: 3px solid ${Colors.verde};
+  margin-bottom: ${Spacing.xsmall}; /* Adicionando espaço entre as seções */
+  padding: ${Spacing.xsmall} 0;
+  border-bottom: 3px solid ${Colors.primary};
 
   & > h2 {
     margin-bottom: ${Spacing.small};
-    color: ${Colors.verde};
+    color: ${Colors.primary};
     font-size: 2rem;
     text-align: center;
   }
@@ -57,7 +55,7 @@ export const SectionFinal = styled.section`
 
   & > h2 {
     margin-bottom: ${Spacing.small};
-    color: ${Colors.verde};
+    color: ${Colors.primary};
     font-size: 2rem;
     text-align: center;
   }
@@ -69,21 +67,21 @@ export const PersonagemContainer = styled.div`
   gap: ${Spacing.medium}; /* Espaçamento entre os cards */
   margin-top: ${Spacing.large};
 
-  @media (max-width: ${Breakpoints.desktop}) {
+  @media (max-width: ${Breakpoints.lg}) {
     grid-template-columns: repeat(
       4,
       1fr
     ); /* 4 cards por linha em telas médias */
   }
 
-  @media (max-width: ${Breakpoints.tablet}) {
+  @media (max-width: ${Breakpoints.md}) {
     grid-template-columns: repeat(
       3,
       1fr
     ); /* 3 cards por linha em telas pequenas */
   }
 
-  @media (max-width: ${Breakpoints.mobile}) {
+  @media (max-width: ${Breakpoints.sm}) {
     grid-template-columns: repeat(
       2,
       1fr
@@ -97,7 +95,7 @@ export const PersonagemContainer = styled.div`
 
 export const Card = styled.div`
   background-color: ${Colors.cardBackground}; /* Cor do card agora mais clara e harmônica */
-  color: ${Colors.secondary};
+  color: ${Colors.text};
   border-radius: 12px; /* Bordas mais arredondadas */
   padding: ${Spacing.medium};
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave para o card */
@@ -113,7 +111,7 @@ export const Card = styled.div`
   }
 
   h3 {
-    color: ${Colors.verde};
+    color: ${Colors.primary};
     font-size: 1.25rem;
     margin-bottom: ${Spacing.small};
     font-weight: bold;
@@ -122,7 +120,7 @@ export const Card = styled.div`
 
   p {
     font-size: 1rem;
-    color: ${Colors.secondary};
+    color: ${Colors.text};
     margin-top: ${Spacing.small};
   }
 
