@@ -23,6 +23,11 @@ import MetalCoola from "../assets/images/stage/metalcoola.png";
 import MechaFreeza from "../assets/images/stage/mechfreeza.jpg";
 import KingCold from "../assets/images/stage/kingcold.png";
 import Android19 from "../assets/images/stage/android19.png";
+import Android20 from "../assets/images/stage/android20.jpeg";
+import Android17 from "../assets/images/stage/Android_17.png";
+import Android18 from "../assets/images/stage/android18.jpg";
+import Android16 from "../assets/images/stage/android16.png";
+import Super13 from "../assets/images/stage/super13.png";
 
 export const personagensData = [
   {
@@ -429,6 +434,87 @@ export const personagensData = [
         "32.500x Zeni: 70%",
         "1x Trunks Boots Z: 10%",
         "1x Box Freeza Army: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 26,
+    name: "Android 20",
+    image: Android20, // Substitua por seu caminho de importação da imagem
+    story:
+      "Android 20, também conhecido como Dr. Gero, é o criador dos androides e um dos principais vilões na saga Android.",
+    quest: ["Derrote 60 Android 15", "Derrote Android 20"],
+    drops: {
+      minions: ["8.000x Zeni: 40%"],
+      boss: [
+        "40.000x Zeni: 70%",
+        "1x Android Bracer Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 27,
+    name: "Android 17",
+    image: Android17, // Substitua por seu caminho de importação da imagem
+    story:
+      "Android 17 é um dos androides criados pelo Dr. Gero e é um dos principais vilões na saga Android, com um papel importante na luta contra os Z Fighters.",
+    quest: ["Derrote 65 Thief 1", "Derrote Android 17"],
+    drops: {
+      minions: ["9.500x Zeni: 40%"],
+      boss: [
+        "47.500x Zeni: 70%",
+        "1x Android Armor: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 28,
+    name: "Android 18",
+    image: Android18, // Substitua por seu caminho de importação da imagem
+    story:
+      "Android 18 é uma das androides criadas pelo Dr. Gero, e é irmã de Android 17. Ela tem uma personalidade única e desempenha um papel importante na história.",
+    quest: ["Derrote 65 Thief 2", "Derrote Android 18"],
+    drops: {
+      minions: ["11.000x Zeni: 40%"],
+      boss: [
+        "55.000x Zeni: 70%",
+        "1x Android Pants Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 29,
+    name: "Android 16",
+    image: Android16, // Substitua por seu caminho de importação da imagem
+    story:
+      "Android 16 é um dos androides mais poderosos e com um código de ética diferente dos outros androides, ele busca destruir Goku para proteger a Terra.",
+    quest: ["Derrote 65 Thief 3", "Derrote Android 16"],
+    drops: {
+      minions: ["13.000x Zeni: 40%"],
+      boss: [
+        "65.000x Zeni: 70%",
+        "1x Android Boots Z: 10%",
+        "1x Box Future Warriors: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 30,
+    name: "Super 13",
+    image: Super13, // Substitua por seu caminho de importação da imagem
+    story:
+      "Super 13, também conhecido como 'Android 13' em sua forma mais poderosa, é um vilão da saga dos Androides. Ele é a versão mais poderosa do Android 13.",
+    quest: ["Derrote 65 Thief 4", "Derrote Super 13"],
+    drops: {
+      minions: ["15.000x Zeni: 40%"],
+      boss: [
+        "36.000x Zeni: 70%",
+        "1x Android Bracer Z: 10%",
         "1x Esfera do dragão aleatória: 0,5%",
       ],
     },
