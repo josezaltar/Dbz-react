@@ -24,7 +24,7 @@ export const Container = styled.section`
 
 export const Title = styled.h1`
   font-size: 8rem;
-  color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
+  color: ${Colors.verde}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: 0;
   -webkit-text-stroke: 0.8px #000;
 
@@ -50,7 +50,7 @@ export const DownloadItem = styled.div`
 
   h3 {
     font-size: 4rem;
-    color: ${Colors.primary};
+    color: ${Colors.verde};
     -webkit-text-stroke: 0.85px #000;
 
     @media (max-width: ${Breakpoints.tablet}) {

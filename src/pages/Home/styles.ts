@@ -31,7 +31,7 @@ export const Container = styled.section`
 // Título principal da página
 export const Title = styled.h1`
   font-size: 6rem;
-  color: ${Colors.primary}; /* Cor primária para o título, laranja vibrante */
+  color: ${Colors.verde}; /* Cor primária para o título, laranja vibrante */
   margin-bottom: ${Spacing.large};
   text-align: center; /* Centraliza o título */
   -webkit-text-stroke: 0.4px #000; /* Destaque no contorno do título para dar um efeito mais épico */
@@ -54,7 +54,7 @@ export const Text = styled.p`
   text-align: justify; /* Justifica o texto */
 
   strong {
-    color: ${Colors.primary}; /* Destaca palavras fortes com a cor laranja vibrante */
+    color: ${Colors.verde}; /* Destaca palavras fortes com a cor laranja vibrante */
   }
 
   /* Responsividade */

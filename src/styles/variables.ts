@@ -1,7 +1,7 @@
 export const Colors = {
   background: "#1a1a1a", // Cor de fundo geral: **Preto escuro** ou **Cinza muito escuro**
   secondary: "#fff", // Cor de texto secundária: **Branco**
-  primary: "#ff9800", // Cor primária para destaque: **Laranja** (um laranja vibrante)
+  primary: "#008000", // Cor primária para destaque: **Laranja** (um laranja vibrante)
   cardBackground: "#333", // Cor de fundo dos cards: **Cinza escuro**
   cardHover: "#444", // Cor de fundo no hover dos cards: **Cinza mais claro que o cardBackground** (ainda escuro, mas um tom diferente)
   black: "#000", // Cor preta: **Preto**

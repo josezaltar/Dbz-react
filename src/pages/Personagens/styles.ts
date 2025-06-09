@@ -21,7 +21,7 @@ export const Container = styled.section`
 
 export const Title = styled.h1`
   font-size: 5rem;
-  color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
+  color: ${Colors.verde}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: ${Spacing.xLarge};
   text-align: center;
   -webkit-text-stroke: 0.8px #000;
@@ -42,11 +42,11 @@ export const Section = styled.section`
   margin-bottom: ${Spacing.large}; /* Adicionando espaço entre as seções */
   padding: ${Spacing.small} 0;
 
-  border-bottom: 3px solid ${Colors.primary};
+  border-bottom: 3px solid ${Colors.verde};
 
   & > h2 {
     margin-bottom: ${Spacing.small};
-    color: ${Colors.primary};
+    color: ${Colors.verde};
     font-size: 2rem;
     text-align: center;
   }
@@ -57,7 +57,7 @@ export const SectionFinal = styled.section`
 
   & > h2 {
     margin-bottom: ${Spacing.small};
-    color: ${Colors.primary};
+    color: ${Colors.verde};
     font-size: 2rem;
     text-align: center;
   }
@@ -113,7 +113,7 @@ export const Card = styled.div`
   }
 
   h3 {
-    color: ${Colors.primary};
+    color: ${Colors.verde};
     font-size: 1.25rem;
     margin-bottom: ${Spacing.small};
     font-weight: bold;

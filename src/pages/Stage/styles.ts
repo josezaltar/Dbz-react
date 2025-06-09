@@ -39,7 +39,7 @@ export const StageContainer = styled.div`
 
 export const Title = styled.h1`
   font-size: 5rem;
-  color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
+  color: ${Colors.verde}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: ${Spacing.xsmall};
   text-align: center;
   -webkit-text-stroke: 0.8px #000;
@@ -78,7 +78,7 @@ export const CharacterCard = styled.div`
   }
 
   h3 {
-    color: ${Colors.primary};
+    color: ${Colors.verde};
     font-size: 2.2rem;
     margin-top: ${Spacing.medium};
     margin-bottom: ${Spacing.small};

@@ -21,7 +21,7 @@ export const Container = styled.section`
 
 export const Title = styled.h1`
   font-size: 3rem;
-  color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
+  color: ${Colors.verde}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: ${Spacing.large};
   text-align: center;
   -webkit-text-stroke: 0.8px #000;
@@ -39,7 +39,7 @@ export const Title = styled.h1`
 export const SubTitle = styled.h2`
   -webkit-text-stroke: 0.3px #000;
   font-size: 2rem;
-  color: ${Colors.primary}; /* Usando a cor primária definida em variables.ts */
+  color: ${Colors.verde}; /* Usando a cor primária definida em variables.ts */
   margin-bottom: ${Spacing.medium};
   text-align: center;
 `;

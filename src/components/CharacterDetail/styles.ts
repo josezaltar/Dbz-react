@@ -12,6 +12,7 @@ export const Overlay = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  text-align: left; /* Assegura que o texto dentro da lista fique alinhado à esquerda */
 `;
 
 export const Container = styled.div`

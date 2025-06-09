@@ -65,7 +65,7 @@ export const Card = styled.div`
   }
 
   h3 {
-    color: ${Colors.primary};
+    color: ${Colors.verde};
     font-size: 2.2rem;
     margin-bottom: 0;
     font-weight: bold;
@@ -80,7 +80,7 @@ export const Card = styled.div`
   }
 
   h4 {
-    color: ${Colors.primary};
+    color: ${Colors.verde};
     font-size: 2rem;
     margin-top: ${Spacing.medium};
     margin-bottom: ${Spacing.small};
