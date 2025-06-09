@@ -40,7 +40,7 @@ export const Container = styled.section`
 `;
 
 export const Title = styled.h1`
-  font-size: clamp(2.5rem, 5vw, ${fontSize.title});
+  font-size: 5rem;
   color: ${Colors.primary};
   margin-bottom: 0;
   -webkit-text-stroke: 0.8px #000;
