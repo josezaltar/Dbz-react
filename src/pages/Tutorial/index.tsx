@@ -87,7 +87,12 @@ const Tutorial: React.FC = () => {
           <img
             src={content[selectedTopic]?.image}
             alt={selectedTopic}
-            style={{ width: "75%", height: "auto", marginTop: "20px" }}
+            style={{
+              width: "50%",
+              height: "40%%",
+              marginTop: "20px",
+              color: "white",
+            }}
           />
         </Content>
       </div>
