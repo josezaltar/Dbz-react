@@ -8,7 +8,7 @@ import Fantasminha from "../../../assets/images/personagens/Lendarios/Fantasminh
 import NamekianGod from "../../../assets/images/personagens/Lendarios/NamekianGod.png";
 import BrolySSJ4 from "../../../assets/images/personagens/Lendarios/BrolySSJ4.jpg";
 import TurlesCaped from "../../../assets/images/personagens/Lendarios/TurlesCaped.png";
-import Super13 from "../../../assets/images/personagens/Lendarios/Super13.jpg";
+import Super13 from "../../../assets/images/stage/super13.png";
 
 // Tipagem dos personagens lendários
 interface Personagem {

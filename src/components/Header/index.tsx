@@ -66,7 +66,7 @@ const Header: React.FC = () => {
           </NavItem>
           <NavItem>
             <NavLink as={Link} to="/personagens" onClick={handleLinkClick}>
-              Personagens
+              Skins
             </NavLink>
           </NavItem>
           <NavItem>

@@ -13,7 +13,7 @@ import {
 // Importação das imagens
 import foto2 from "../../assets/images/prints/Captura de tela 2025-06-08 213236.png";
 import foto3 from "../../assets/images/prints/Captura de tela 2025-06-08 214136.png";
-import foto4 from "../../assets/images/prints/Captura de tela 2025-06-08 214144.png";
+import foto4 from "../../assets/images/prints/Captura de tela 2025-06-10 222916.png";
 import foto5 from "../../assets/images/prints/Captura de tela 2025-06-08 214153.png";
 
 const Galeria: React.FC = () => {

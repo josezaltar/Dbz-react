@@ -5,11 +5,11 @@ import { Card, PersonagemContainer, CardWrapper } from "../styles";
 import Trunks1 from "../../../assets/images/personagens/Raros/Trunks1.jpg";
 import Trunks2 from "../../../assets/images/personagens/Raros/Trunks2.jpg";
 import CellJr from "../../../assets/images/personagens/Raros/CellJr.png";
-import MechaFreeza from "../../../assets/images/personagens/Raros/MechaFreeza.jpg";
+import MechaFreeza from "../../../assets/images/stage/mechfreeza.jpg";
 import Bulma from "../../../assets/images/personagens/Raros/Bulma.jpg";
 import Kuririn from "../../../assets/images/personagens/Raros/Kuririn.jpg";
 import ReiVegeta from "../../../assets/images/personagens/Raros/ReiVegeta.png";
-import ReiCold from "../../../assets/images/personagens/Raros/ReiCold.jpg";
+import ReiCold from "../../../assets/images/stage/kingcold.png";
 import GinyuGoku from "../../../assets/images/personagens/Raros/GinyuGoku.jpg";
 
 // Tipagem dos personagens raros

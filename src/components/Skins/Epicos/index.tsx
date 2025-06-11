@@ -4,8 +4,8 @@ import { Card, PersonagemContainer, CardWrapper } from "../styles";
 // Importando as imagens dos personagens épicos
 import Broly from "../../../assets/images/personagens/Epicos/Broly.jpeg";
 import SuperNamek from "../../../assets/images/personagens/Epicos/SuperNamek.png";
-import SuperTules from "../../../assets/images/personagens/Epicos/SuperTules.jpg";
-import Android16 from "../../../assets/images/personagens/Epicos/Android16.jpg";
+import SuperTules from "../../../assets/images/stage/turles.png";
+import Android16 from "../../../assets/images/stage/android16.png";
 import Alienigena1 from "../../../assets/images/personagens/Epicos/Alienigena1.jpeg";
 import ReiVegetaSSJ from "../../../assets/images/personagens/Epicos/ReiVegetaSSJ.jpg";
 import JackieChun from "../../../assets/images/personagens/Epicos/JackieChun.jpg";

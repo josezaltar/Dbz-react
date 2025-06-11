@@ -5,15 +5,15 @@ import Goku from "../../../assets/images/personagens/Comum/Goku.jpg";
 import Piccolo from "../../../assets/images/personagens/Comum/piccolo.png";
 import Trunks1 from "../../../assets/images/personagens/Comum/trunks1.jpeg";
 import Trunks2 from "../../../assets/images/personagens/Comum/trunks2.jpeg";
-import Freeza from "../../../assets/images/personagens/Comum/freeza.jpeg";
+import Freeza from "../../../assets/images/stage/freeza1.jpg";
 import Dende from "../../../assets/images/personagens/Comum/dende.png";
 import Tenshinhan from "../../../assets/images/personagens/Comum/Tenshinhan.jpeg";
 import Kuririn from "../../../assets/images/personagens/Comum/kuririn1.jpg";
-import Gurdo from "../../../assets/images/personagens/Comum/Gurdo.jpeg";
-import Recoome from "../../../assets/images/personagens/Comum/Recoome.png";
-import Jeice from "../../../assets/images/personagens/Comum/Jeice.png";
-import Burter from "../../../assets/images/personagens/Comum/Burter.jpg";
-import Ginyu from "../../../assets/images/personagens/Comum/Ginyu.jpg";
+import Gurdo from "../../../assets/images/stage/guldo.jpg";
+import Recoome from "../../../assets/images/stage/recoome.png";
+import Jeice from "../../../assets/images/stage/jeice.png";
+import Burter from "../../../assets/images/stage/burter.png";
+import Ginyu from "../../../assets/images/stage/ginyu.jpg";
 
 // Dados dos personagens comuns
 const personagens = [
