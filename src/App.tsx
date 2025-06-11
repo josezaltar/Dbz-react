@@ -12,14 +12,9 @@ import Galeria from "./pages/Galeria"; // Página Galeria
 import Comunidade from "./pages/Comunidade"; // Página Comunidade
 import Banner from "./components/Banner"; // Importa o componente Banner
 import Stage from "./pages/Stage"; // Página Stage
-import CharacterDetail from "./components/CharacterDetail"; // Página de detalhes dos personagens
 
 const App: React.FC = () => {
   // Função de fechamento do modal
-  const handleCloseModal = () => {
-    console.log("Fechando detalhes do personagem");
-  };
-
   return (
     <Router>
       <GlobalStyle />
