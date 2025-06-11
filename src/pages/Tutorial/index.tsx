@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
-  Title,
   List,
   ListItem,
   Content,
   ContentTitle,
   ContentText,
+  Img,
+  HamburgerIcon,
+  Menu,
+  Overlay,
+  Title,
 } from "./styles"; // Importando os estilos
 
 // Importando as imagens
@@ -26,8 +30,36 @@ interface ContentType {
 
 const Tutorial: React.FC = () => {
   const [selectedTopic, setSelectedTopic] = useState<string>("Movimentação");
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false); // Estado para controlar o menu hambúrguer
 
-  // O tipo 'Record<string, ContentType>' é utilizado para garantir que cada chave (tópico) tenha um título, texto e imagem
+  // Função para alternar o menu
+  const handleToggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Alterna o estado do menu
+  };
+
+  // Função para fechar o menu ao clicar em um link
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // Fecha o menu ao clicar em um link
+  };
+
+  // Função para verificar o tamanho da tela e ajustar o estado do menu
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsMenuOpen(false); // Fecha o menu quando a tela for maior que 768px
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Chama a função na primeira renderização para corrigir o estado se necessário
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const content: Record<string, ContentType> = {
     Movimentação: {
       title: "Para movimentar utilize as teclas direcionais do seu teclado",
@@ -63,40 +95,38 @@ const Tutorial: React.FC = () => {
   };
 
   return (
-    <Container>
-      <Title>Tutorial</Title> {/* Título fixo na parte superior */}
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <nav style={{ width: "250px", marginRight: "30px" }}>
-          <List>
+    <>
+      <Title>Tutorial</Title>
+      <Container isOpen={isMenuOpen}>
+        <Overlay isOpen={isMenuOpen} onClick={handleToggleMenu} />
+        <HamburgerIcon onClick={handleToggleMenu} isOpen={isMenuOpen}>
+          Menu
+        </HamburgerIcon>
+
+        <Menu isOpen={isMenuOpen}>
+          <List isOpen={isMenuOpen}>
             {Object.keys(content).map((topic) => (
               <ListItem
                 key={topic}
-                onClick={() => setSelectedTopic(topic)}
+                onClick={() => {
+                  setSelectedTopic(topic);
+                  handleLinkClick(); // Fecha o menu ao clicar em um tópico
+                }}
                 selected={selectedTopic === topic}
               >
                 {topic}
               </ListItem>
             ))}
           </List>
-        </nav>
+        </Menu>
 
         <Content>
           <ContentTitle>{content[selectedTopic]?.title}</ContentTitle>
           <ContentText>{content[selectedTopic]?.text}</ContentText>
-          {/* Exibindo a imagem do tutorial */}
-          <img
-            src={content[selectedTopic]?.image}
-            alt={selectedTopic}
-            style={{
-              width: "50%",
-              height: "40%%",
-              marginTop: "20px",
-              color: "white",
-            }}
-          />
+          <Img src={content[selectedTopic]?.image} alt={selectedTopic} />
         </Content>
-      </div>
-    </Container>
+      </Container>
+    </>
   );
 };
 
