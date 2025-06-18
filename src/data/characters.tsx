@@ -28,6 +28,11 @@ import Android17 from "../assets/images/stage/Android_17.png";
 import Android18 from "../assets/images/stage/android18.jpg";
 import Android16 from "../assets/images/stage/android16.png";
 import Super13 from "../assets/images/stage/super13.png";
+import CellImage from "../assets/images/stage/CellImage.png";
+import CellImperfeitoImage from "../assets/images/stage/CellImperfeitoImage.png";
+import CellPerfeitoImage from "../assets/images/stage/CellPerfeitoImage.png";
+import BojackImage from "../assets/images/stage/BojackImage.png";
+import BrolyImage from "../assets/images/stage/BrolyImage.png";
 
 export const personagensData = [
   {
@@ -506,7 +511,7 @@ export const personagensData = [
   {
     id: 30,
     name: "Super 13",
-    image: Super13, // Substitua por seu caminho de importação da imagem
+    image: Super13,
     story:
       "Super 13, também conhecido como 'Android 13' em sua forma mais poderosa, é um vilão da saga dos Androides. Ele é a versão mais poderosa do Android 13.",
     quest: ["Derrote 65 Thief 4", "Derrote Super 13"],
@@ -515,6 +520,90 @@ export const personagensData = [
       boss: [
         "36.000x Zeni: 70%",
         "1x Android Bracer Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 31,
+    name: "Cell",
+    image: CellImage,
+    story:
+      "Cell, o vilão bio-andróide, é uma das ameaças mais poderosas do universo Dragon Ball. Sua forma inicial é Imperfeita, mas após absorver os androides 17 e 18, ele atinge a forma Perfeita.",
+    quest: ["Derrote 70 Cell Jr #1", "Derrote Cell"],
+    drops: {
+      minions: ["17.000x Zeni: 40%"],
+      boss: [
+        "85.000x Zeni: 70%",
+        "1x Cell Boots Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 32,
+    name: "Cell 2 Forma",
+    image: CellImperfeitoImage,
+    story:
+      "Cell 2 Forma é a primeira forma de Cell, antes de atingir sua forma final. Nessa fase, ele é mais fraco, mas ainda representa uma ameaça significativa.",
+    quest: ["Derrote 70 Cell Jr #2", "Derrote Cell 2 Forma"],
+    drops: {
+      minions: ["20.000x Zeni: 40%"],
+      boss: [
+        "100.000x Zeni: 70%",
+        "1x Cell Pants Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 33,
+    name: "Cell Perfeito",
+    image: CellPerfeitoImage,
+    story:
+      "A forma Perfeita de Cell é sua forma final, onde ele atinge um poder imenso e se torna uma ameaça quase imparável.",
+    quest: ["Derrote 70 Cell Jr #3", "Derrote Cell Perfeito"],
+    drops: {
+      minions: ["23.000x Zeni: 40%"],
+      boss: [
+        "115.000x Zeni: 70%",
+        "1x Cell Bracer Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 34,
+    name: "Bojack",
+    image: BojackImage,
+    story:
+      "Bojack é um dos vilões mais poderosos do universo Dragon Ball Z. Ele vem de um torneio intergaláctico e está sempre em busca de destruição.",
+    quest: ["Derrote 70 Bojack Soldier", "Derrote Bojack"],
+    drops: {
+      minions: ["27.000x Zeni: 40%"],
+      boss: [
+        "135.000x Zeni: 70%",
+        "1x Cell Armor Z: 10%",
+        "1x Esfera do dragão aleatória: 0,5%",
+      ],
+    },
+  },
+  {
+    id: 35,
+    name: "Broly",
+    image: BrolyImage,
+    story:
+      "Broly é o lendário Super Saiyajin, conhecido por seu poder extraordinário e natureza destrutiva. Sua força está além dos limites dos outros guerreiros.",
+    quest: ["Derrote 70 Pirate Robot", "Derrote Broly"],
+    drops: {
+      minions: ["30.000x Zeni: 40%"],
+      boss: [
+        "150.000x Zeni: 70%",
+        "1x Box Future Warriors: 10%",
+        "1x Box Freeza Army: 10%",
+        "1x Orb Box +1: 10%",
+        "1x Cell Bracer Z: 10%",
+        "1x Cell Pantz Z: 10%",
         "1x Esfera do dragão aleatória: 0,5%",
       ],
     },
