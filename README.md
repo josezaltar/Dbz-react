@@ -2,6 +2,8 @@
 
 Bem-vindo ao repositório do **Dragon Ball Z: Revolution**, uma aplicação web interativa inspirada no incrível universo de Dragon Ball Z. Explore personagens, sagas e muito mais nesta aplicação construída com as mais modernas tecnologias de desenvolvimento web.
 
+**[➡️ Acesse o site do projeto aqui! ⬅️](https://dbz-revolution.vercel.app/)**
+
 ![Dragon Ball Z](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWtncWRiYWlzZzdtZnUwOWdyZmNsaGlnNGFienduM3Y0dGtsMmd1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cb9aF9tDyiRkYbz3BX/giphy.gif)
 
 ## 📖 Sobre o Projeto
