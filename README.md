@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+# 🐉 Dragon Ball Z: Revolution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao repositório do **Dragon Ball Z: Revolution**, uma aplicação web interativa inspirada no incrível universo de Dragon Ball Z. Explore personagens, sagas e muito mais nesta aplicação construída com as mais modernas tecnologias de desenvolvimento web.
 
-## Available Scripts
+![Dragon Ball Z](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWtncWRiYWlzZzdtZnUwOWdyZmNsaGlnNGFienduM3Y0dGtsMmd1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cb9aF9tDyiRkYbz3BX/giphy.gif)
 
-In the project directory, you can run:
+## 📖 Sobre o Projeto
 
-### `npm start`
+Este projeto foi criado como uma homenagem ao universo de Dragon Ball Z, utilizando a tecnologia **React** para construir uma interface de usuário rápida e reativa. A aplicação é totalmente tipada com **TypeScript**, garantindo um código mais robusto e fácil de manter.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O objetivo é criar uma plataforma onde os fãs possam encontrar informações, visualizar estatísticas de personagens e, futuramente, interagir com elementos do universo DBZ.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ✨ Funcionalidades Principais
 
-### `npm test`
+* **Interface Moderna:** Uma UI limpa e agradável construída com React e Styled Components.
+* **Código Tipado:** Segurança e qualidade de código garantidas pelo uso de TypeScript.
+* **Navegação Fluida:** Roteamento entre páginas gerenciado pelo React Router.
+* **Componentes Testados:** Garantia de qualidade através de testes unitários e de integração com Jest e Testing Library.
+* **Pronto para Deploy:** Configurado com ferramentas de analytics e performance da Vercel.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tecnologias Utilizadas
 
-### `npm run build`
+Este projeto foi construído com as seguintes tecnologias e bibliotecas:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **[React](https://reactjs.org/) (v19.1.0):** Biblioteca principal para a construção da interface.
+* **[TypeScript](https://www.typescriptlang.org/) (v4.9.5):** Superset do JavaScript que adiciona tipagem estática.
+* **[Styled Components](https://styled-components.com/):** Para estilização de componentes CSS-in-JS.
+* **[React Router DOM](https://reactrouter.com/):** Para gerenciamento de rotas na aplicação.
+* **[React Icons](https://react-icons.github.io/react-icons/):** Biblioteca para inclusão de ícones.
+* **[Jest](https://jestjs.io/):** Framework para testes de JavaScript.
+* **[React Testing Library](https://testing-library.com/):** Para testar componentes React da forma como o usuário os utiliza.
+* **[Vercel Analytics](https://vercel.com/analytics):** Para monitoramento de tráfego e uso.
+* **[Vercel Speed Insights](https://vercel.com/speed-insights):** Para análise de performance da aplicação.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Começando
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para obter uma cópia local do projeto e executá-la, siga estes passos simples.
 
-### `npm run eject`
+### Pré-requisitos
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Você precisa ter o [Node.js](https://nodejs.org/en/) (que inclui o `npm`) instalado em sua máquina.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Instalação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1.  Clone o repositório para a sua máquina local:
+    ```sh
+    git clone [https://github.com/josezaltar/Dbz-Revolution.git](https://github.com/josezaltar/Dbz-Revolution.git)
+    ```
+2.  Navegue até o diretório do projeto:
+    ```sh
+    cd dragon-ball-z-revolution
+    ```
+3.  Instale todas as dependências do projeto:
+    ```sh
+    npm install
+    ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Executando a Aplicação
 
-## Learn More
+Após a instalação, você pode iniciar o servidor de desenvolvimento local:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+npm start
